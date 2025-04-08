@@ -21,6 +21,9 @@
     "format:fix": "prettier --write .",
     "build-storybook": "storybook build"
   },
+  "sideEffects": [
+    "**/*.css"
+  ],
   "dependencies": {
     "@mantine/core": "^7.17.3",
     "@mantine/hooks": "^7.17.3",

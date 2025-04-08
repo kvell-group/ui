@@ -27,6 +27,7 @@ export default defineConfig({
       entry: resolve(__dirname, 'src/main.ts'),
       formats: ['es'],
     },
+    copyPublicDir: false,
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],
       input: Object.fromEntries(

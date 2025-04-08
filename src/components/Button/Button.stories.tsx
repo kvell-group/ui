@@ -1,35 +1,38 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
 import { MantineProvider } from '@/components/MainProvider'
-import { TestButton } from '@/components/TestButton'
+
+import '@mantine/core/styles.css'
+import { theme } from '@/components/theme'
+import { Button } from '@/components/Button'
 import { ButtonProps } from '@mantine/core'
 
 // ----------------------------------------------------------------------
 
 const meta = {
-  title: 'Components/MyButton',
-  component: TestButton,
+  title: 'Components/Button',
+  component: Button,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   decorators: (Story) => (
-    <MantineProvider>
+    <MantineProvider theme={theme}>
       <Story />
     </MantineProvider>
   ),
-} satisfies Meta<typeof TestButton>
+} satisfies Meta<typeof Button>
 
 type Story = StoryObj<typeof meta>
 
-export const Large: Story = {
+export const ButtonLarge: Story = {
   args: {
     size: 'xl',
     children: 'Button',
   } as ButtonProps,
 }
 
-export const Small: Story = {
+export const ButtonSmall: Story = {
   args: {
     size: 'sm',
     children: 'Button',
