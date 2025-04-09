@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 
 import { MantineProvider } from '@/components/MainProvider'
 
-import '@mantine/core/styles.css'
+// import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
 import { Button } from '@/components/Button'
 import { ButtonProps } from '@mantine/core'
