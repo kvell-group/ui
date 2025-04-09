@@ -1,8 +1,8 @@
-.button {
+.root {
+  background-color: green;
+  border-radius: 12px;
+}
+
+.inner {
   background-color: red;
-  &:disabled,
-  &[data-disabled] {
-    border-color: light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
-    background-color: transparent;
-  }
 }
