@@ -4,8 +4,6 @@ import '@mantine/core/styles/Button.css'
 import styles from '@/components/Button/styles.module.css'
 
 // ----------------------------------------------------------------------
-//default props
-MantineButton.withProps({})
 
 export const Button = (props: ButtonProps) => {
   return (

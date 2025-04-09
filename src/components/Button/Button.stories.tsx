@@ -31,14 +31,7 @@ type Story = StoryObj<typeof meta>
 
 export const ButtonLarge: Story = {
   args: {
-    size: 'xl',
-    children: 'Button',
-  } as ButtonProps,
-}
-
-export const ButtonSmall: Story = {
-  args: {
-    size: 'sm',
+    size: 'md',
     children: 'Button',
   } as ButtonProps,
 }
