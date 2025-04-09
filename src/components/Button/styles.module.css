@@ -1,8 +1,13 @@
 .root {
   background-color: green;
   border-radius: 12px;
+  width: 200px;
 }
 
 .inner {
   background-color: red;
+}
+
+.label {
+  color: yellow;
 }
