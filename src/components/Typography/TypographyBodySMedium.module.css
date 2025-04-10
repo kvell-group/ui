@@ -1,0 +1,7 @@
+.root {
+  font-family: var(--mantine-font-family);
+  font-weight: 500;
+  font-size: var(--mantine-font-size-body-s-medium);
+  line-height: var(--mantine-line-height-body-s);
+  letter-spacing: var(--mantine-letter-spacing-body-s);
+}

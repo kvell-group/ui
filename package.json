@@ -26,6 +26,7 @@
     "@mantine/hooks": "^7.17.3",
     "glob": "^11.0.1",
     "semantic-release": "^24.2.3",
+    "vite-plugin-svgr": "^4.3.0",
     "vite-tsconfig-paths": "^5.1.4"
   },
   "peerDependencies ": {
@@ -35,6 +36,7 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.6",
     "@eslint/js": "^9.21.0",
+    "@newhighsco/storybook-addon-svgr": "^2.0.59",
     "@storybook/addon-essentials": "^8.6.12",
     "@storybook/addon-onboarding": "^8.6.12",
     "@storybook/blocks": "^8.6.12",
