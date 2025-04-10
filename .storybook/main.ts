@@ -2,6 +2,7 @@ import type { StorybookConfig } from '@storybook/react-vite'
 import path from 'path'
 import { UserConfig } from 'vite'
 import tsconfigPaths from 'vite-tsconfig-paths'
+import svgr from 'vite-plugin-svgr'
 
 // ----------------------------------------------------------------------
 
@@ -18,6 +19,8 @@ const config: StorybookConfig = {
     options: {},
   },
   viteFinal: async (config: UserConfig) => {
+    config?.plugins?.push(svgr({ include: '**/*.svg' }))
+
     config?.plugins?.push(
       tsconfigPaths({
         projects: [path.resolve(path.dirname(__dirname), 'tsconfig.json')],
