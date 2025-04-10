@@ -1,10 +1,15 @@
 import { MantineProvider as MantineProviderCore } from '@mantine/core'
-import type { MantineProviderProps as MantineProviderCoreProps } from '@mantine/core'
+import type { MantineProviderProps } from '@mantine/core'
 
 // ----------------------------------------------------------------------
 
-type MantineProviderProps = MantineProviderCoreProps
-
-export function MantineProvider({ children, theme }: MantineProviderProps) {
-  return <MantineProviderCore theme={theme}>{children}</MantineProviderCore>
+export function MantineProvider({ children, theme, ...restProps }: MantineProviderProps) {
+  return (
+    <MantineProviderCore
+      theme={theme}
+      {...restProps}
+    >
+      {children}
+    </MantineProviderCore>
+  )
 }
