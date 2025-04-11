@@ -46,7 +46,6 @@
     "@vitest/browser": "^3.1.1",
     "@vitest/coverage-v8": "^3.1.1",
     "autoprefixer": "^10.4.21",
-    "classnames": "^2.5.1",
     "eslint": "^9.21.0",
     "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-react-hooks": "^5.1.0",
@@ -70,7 +69,8 @@
     "vite-plugin-lib-inject-css": "^2.2.1",
     "vite-plugin-svgr": "^4.3.0",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.1.1"
+    "vitest": "^3.1.1",
+    "clsx": "^2.1.1"
   },
   "publishConfig": {
     "access": "public"

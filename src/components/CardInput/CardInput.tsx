@@ -3,12 +3,13 @@ import { IMaskInput } from 'react-imask'
 import cardInputClassNames from '@/components/CardInput/CardInput.module.css'
 import textClassNames from '@/components/Text/Text.module.css'
 import CardSVG from '@/assets/card.svg'
-import classNames from 'classnames'
+
 import { useCardLogo } from '@/components/CardInput/useCardLogo'
+import clsx from 'clsx'
 
 // ----------------------------------------------------------------------
 
-const inputClassNames = classNames(cardInputClassNames.input, textClassNames['caption-l-regular'])
+const inputClassNames = clsx(cardInputClassNames.input, textClassNames['caption-l-regular'])
 
 export const CardInputBase = InputBase.withProps({
   leftSection: <CardSVG />,
