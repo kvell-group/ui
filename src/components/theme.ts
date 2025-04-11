@@ -12,8 +12,13 @@ export const theme: MantineThemeOverride = {
     primary: colorsTuple('#14151a'),
     secondary: colorsTuple('#ffffff'),
     tertiary: colorsTuple('#0a0f290a'),
-  },
 
+    //borders
+    'border-action-normal': colorsTuple('#dee0e3'),
+
+    //text
+    'text-base-tertiary': colorsTuple('#0d112666'),
+  },
   primaryShade: 6, // { light: 6, dark: 8 } default mantine by theme
   primaryColor: 'primary',
   /* variantColorResolver: ({ color, variant, gradient, theme }) => {
@@ -46,36 +51,51 @@ export const theme: MantineThemeOverride = {
     },
   }, */
   radius: {
+    // same name from blank and mantine
     xl: '12px',
-    // xs: '6px', sm: '8px', md: '12px', lg: '16px',
-  }, //!!!TODO sync with blank
+    //mantine default variables
+    xs: '0.125rem',
+    sm: '0.25rem',
+    md: '0.5rem',
+    lg: '2rem',
+  },
   defaultRadius: 'sm',
   spacing: {
     //blank variables
     'body-s': ' -0.20000000298023224px',
     'caption-l': '-0.10000000149011612px;',
-    //mantine variables !!!TODO sync with mantine
-    // xs: '6px', sm: '8px', md: '12px', lg: '16px', xl: '18px'
+    //mantine default variables
+    xs: '0.625rem',
+    sm: '0.75rem',
+    md: '1rem',
+    lg: '1.25rem',
+    xl: '2rem',
   }, //for example
   fontSizes: {
     //blank variables
     'body-s-medium': '16px',
     'caption-l': '14px',
-    // mantine variables !!!TODO sync with mantine
-    xs: '6px',
-    sm: '8px',
-    md: '12px',
-    lg: '16px',
-    xl: '18px',
+    'caption-l-regular': '14px',
+    // mantine default variables
+    xs: '0.75rem',
+    sm: '0.875rem',
+    md: '1rem',
+    lg: '1.125rem',
+    xl: '1.25rem',
   }, //for example
   lineHeights: {
     //blank variables
     'body-s': '24px',
     'caption-l': '20px',
-    // mantine variables !!!TODO sync with mantine
-    // xs: '6px', sm: '8px', md: '12px', lg: '16px', xl: '18px'
-  }, //for example
-  // breakpoints: { xs: '6px', sm: '8px', md: '12px', lg: '16px', xl: '18px' }, //for example !!!TODO sync with mantine
+    // mantine default variables
+    xs: '1.4',
+    sm: '1.45',
+    md: '1.55',
+    lg: '1.6',
+    xl: '1.65',
+  },
+  // mantine default variables
+  breakpoints: { xs: '36em', sm: '48em', md: '62em', lg: '75em', xl: '88em' },
   shadows: {
     //same name for mantine and
     xs: '0px 1px 2px 0px #14151A0D',

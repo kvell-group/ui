@@ -1,0 +1,9 @@
+.input {
+  border-radius: var(--mantine-radius-xl);
+  border: 1px solid var(--mantine-color-border-action-normal-0);
+  color: var(--mantine-color-text-base-tertiary-0);
+}
+
+.section[data-position='right'] {
+  padding-right: 0.25rem;
+}
