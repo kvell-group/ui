@@ -8,5 +8,5 @@ import clsx from 'clsx'
 const inputClassNames = clsx(inputBaseClassNames.input, textClassNames['caption-l-regular'])
 
 export const Input = InputBase.withProps({
-  classNames: { input: inputClassNames, section: inputBaseClassNames.section },
+  classNames: { input: inputClassNames },
 })
