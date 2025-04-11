@@ -4,42 +4,37 @@ import { MantineProvider } from '@/components/MainProvider'
 
 import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
-
-import { CardInput } from '@/components/CardInput'
-import { ChangeEvent, useState } from 'react'
+import { InputMasked } from '@/components/InputMasked/InputMasked'
+import CalendarSVG from '@/assets/calendar.svg'
 
 // ----------------------------------------------------------------------
 
-const CardInputWrapper = () => {
-  const [value, setValue] = useState('')
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => setValue(e.target.value)
-
-  return (
-    <CardInput
-      value={value}
-      onChange={handleChange}
-      style={{ maxWidth: '465px' }}
-    />
-  )
-}
-
 const meta = {
-  title: 'Components/CardInput',
-  component: CardInputWrapper,
+  title: 'Components/InputMasked',
+  component: InputMasked,
   decorators: (Story) => (
     <MantineProvider theme={theme}>
       <Story />
     </MantineProvider>
   ),
-} satisfies Meta<typeof CardInput>
+} satisfies Meta<typeof InputMasked>
 
 type Story = StoryObj<typeof meta>
 
 // ----------------------------------------------------------------------
 
-export const ComponentCardInput: Story = {
-  args: { value: '' },
+export const ComponentInputMasked: Story = {
+  args: { mask: '00/00', placeholder: '01/25', style: { maxWidth: '465px' } },
+}
+
+export const InputMaskedExpiryDate: Story = {
+  args: {
+    fullWidth: true,
+    leftSection: <CalendarSVG />,
+    style: { maxWidth: '304px' },
+    mask: '00/00',
+    value: '1225',
+  },
 }
 
 // ----------------------------------------------------------------------

@@ -72,15 +72,15 @@ export const useCardLogo = (cardPan?: string) => {
 
   useEffect(() => {
     if (!cardPan) {
-      return
-    }
-
-    const detectedCardLabel = getCardLabel(cardPan)
-
-    if (detectedCardLabel) {
-      setCardLabel(detectedCardLabel)
-    } else {
       setCardLabel(null)
+    } else {
+      const detectedCardLabel = getCardLabel(cardPan)
+
+      if (detectedCardLabel) {
+        setCardLabel(detectedCardLabel)
+      } else {
+        setCardLabel(null)
+      }
     }
   }, [cardPan])
 

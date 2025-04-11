@@ -1,33 +1,33 @@
 import { InputBase, InputBaseProps, ElementProps } from '@mantine/core'
 import { IMaskInput } from 'react-imask'
-import cardInputClassNames from '@/components/CardInput/CardInput.module.css'
+import inputCardClassNames from '@/components/InputCard/InputCard.module.css'
 import textClassNames from '@/components/Text/Text.module.css'
 import CardSVG from '@/assets/card.svg'
 
-import { useCardLogo } from '@/components/CardInput/useCardLogo'
+import { useCardLogo } from '@/components/InputCard/useCardLogo'
 import clsx from 'clsx'
 
 // ----------------------------------------------------------------------
 
-const inputClassNames = clsx(cardInputClassNames.input, textClassNames['caption-l-regular'])
+const inputClassNames = clsx(inputCardClassNames.input, textClassNames['caption-l-regular'])
 
-export const CardInputBase = InputBase.withProps({
+export const InputCardBase = InputBase.withProps({
   leftSection: <CardSVG />,
   component: IMaskInput,
   mask: '0000 0000 0000 0000',
   placeholder: '____ ____ ____ ____',
-  classNames: { input: inputClassNames, section: cardInputClassNames.section },
+  classNames: { input: inputClassNames, section: inputCardClassNames.section },
 })
 
 // ----------------------------------------------------------------------
 
-type CardInputProps = InputBaseProps & Omit<ElementProps<'input'>, 'value'> & { value: string }
+type InputCardProps = InputBaseProps & Omit<ElementProps<'input'>, 'value'> & { value: string }
 
-export const CardInput = (props: CardInputProps) => {
+export const InputCard = (props: InputCardProps) => {
   const CardLogo = useCardLogo(props.value)
 
   return (
-    <CardInputBase
+    <InputCardBase
       {...props}
       rightSection={CardLogo && <CardLogo />}
     />
