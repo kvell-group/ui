@@ -8,7 +8,4 @@ export { theme } from '@/components/theme'
 // components
 export { Button } from '@/components/Button'
 export { CardInput } from '@/components/CardInput'
-
-// typography
-export { TypographyBodySMedium } from '@/components/Typography/TypographyBodySMedium'
-export { TypographyCaptionLMedium } from '@/components/Typography/TypographyCaptionLMedium'
+export { Text } from '@/components/Text'

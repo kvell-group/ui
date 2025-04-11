@@ -51,7 +51,7 @@ const getCardLabel = (cardNumber: string) => {
 
 // ----------------------------------------------------------------------
 
-const cardLogosByLabels = {
+const cardLogosByLabel = {
   [CARD_LABEL_MIR]: MirSVG,
   [CARD_LABEL_VISA_ELECTRON]: VisaElectronSVG,
   [CARD_LABEL_VISA]: VisaSVG,
@@ -61,7 +61,7 @@ const cardLogosByLabels = {
 }
 
 const getCardLogo = (cardLabel: CardLabel | null) => {
-  return cardLabel ? cardLogosByLabels[cardLabel] : null
+  return cardLabel ? cardLogosByLabel[cardLabel] : null
 }
 
 // ----------------------------------------------------------------------

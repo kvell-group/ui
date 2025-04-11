@@ -1,14 +1,14 @@
 import { InputBase, InputBaseProps, ElementProps } from '@mantine/core'
 import { IMaskInput } from 'react-imask'
 import cardInputClassNames from '@/components/CardInput/CardInput.module.css'
-import typographyClassNames from '@/components/Typography/TypographyCaptionLRegular.module.css'
+import textClassNames from '@/components/Text/Text.module.css'
 import CardSVG from '@/assets/card.svg'
 import classNames from 'classnames'
 import { useCardLogo } from '@/components/CardInput/useCardLogo'
 
 // ----------------------------------------------------------------------
 
-const inputClassNames = classNames(cardInputClassNames.input, typographyClassNames.root)
+const inputClassNames = classNames(cardInputClassNames.input, textClassNames['caption-l-regular'])
 
 export const CardInputBase = InputBase.withProps({
   leftSection: <CardSVG />,

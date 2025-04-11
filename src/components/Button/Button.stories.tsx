@@ -7,7 +7,7 @@ import ArrowLeftSVG from '@/assets/arrow-left.svg'
 import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
 import { Button } from '@/components/Button'
-import { TypographyBodySMedium } from '@/components/Typography/TypographyBodySMedium'
+import { Text } from '@/components/Text/Text'
 
 // ----------------------------------------------------------------------
 
@@ -45,7 +45,7 @@ export const PrimaryButton: Story = {
     leftSection: <LeadSVG />,
     fullWidth: true,
     style: { maxWidth: '465px' },
-    children: <TypographyBodySMedium>Оплатить 7 605,30 RUB</TypographyBodySMedium>,
+    children: <Text variant='body-s-medium'>Оплатить 7 605,30 RUB</Text>,
   },
 }
 
