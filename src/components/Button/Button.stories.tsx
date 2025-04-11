@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 
 import { MantineProvider } from '@/components/MainProvider'
 import LeadSVG from '@/assets/lead-icon.svg'
-import ArrowLeft from '@/assets/arrow-left.svg'
+import ArrowLeftSVG from '@/assets/arrow-left.svg'
 
 import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
@@ -44,7 +44,7 @@ export const PrimaryButton: Story = {
     variant: 'primary',
     leftSection: <LeadSVG />,
     fullWidth: true,
-    style: { width: '465px' },
+    style: { maxWidth: '465px' },
     children: <TypographyBodySMedium>Оплатить 7 605,30 RUB</TypographyBodySMedium>,
   },
 }
@@ -53,8 +53,8 @@ export const SecondaryButton: Story = {
   args: {
     variant: 'secondary',
     fullWidth: true,
-    leftSection: <ArrowLeft />,
-    style: { width: '255px' },
+    leftSection: <ArrowLeftSVG />,
+    style: { maxWidth: '255px' },
     children: 'Вернуться на сайт продавца',
   },
 }
@@ -63,8 +63,8 @@ export const TertiaryButton: Story = {
   args: {
     variant: 'tertiary',
     fullWidth: true,
-    leftSection: <ArrowLeft />,
-    style: { width: '255px' },
+    leftSection: <ArrowLeftSVG />,
+    style: { maxWidth: '255px' },
     children: 'Сохранённые карты',
   },
 }
