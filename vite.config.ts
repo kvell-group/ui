@@ -31,7 +31,7 @@ export default defineConfig({
     },
     copyPublicDir: false,
     rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-runtime'],
+      external: ['react', 'react-dom', 'react/jsx-runtime', '@mantine/core', '@mantine/hooks'],
       input: Object.fromEntries(
         globSync('src/**/*.{ts,tsx}', {
           ignore: ['src/**/*.d.ts', 'src/**/*.stories.tsx', 'src/assets'],
@@ -53,7 +53,7 @@ export default defineConfig({
         assetFileNames: 'assets/[name][extname]',
         globals: {
           react: 'React',
-          'react-dom': 'React-dom',
+          'react-dom': 'ReactDOM',
           'react/jsx-runtime': 'react/jsx-runtime',
         },
       },
