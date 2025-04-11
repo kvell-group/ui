@@ -8,4 +8,5 @@ export { theme } from '@/components/theme'
 // components
 export { Button } from '@/components/Button'
 export { CardInput } from '@/components/CardInput'
+export { Input } from '@/components/Input'
 export { Text } from '@/components/Text'

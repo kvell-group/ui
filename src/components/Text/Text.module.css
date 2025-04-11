@@ -18,7 +18,7 @@
 
 .caption-l-regular {
   font-family: var(--mantine-font-family);
-  font-weight: 500;
+  font-weight: 400;
   font-size: var(--mantine-font-size-caption-l-regular);
   line-height: var(--mantine-line-height-caption-l);
   letter-spacing: var(--mantine-letter-spacing-caption-l);
