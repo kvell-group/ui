@@ -4,36 +4,36 @@ import { MantineProvider } from '@/components/MainProvider'
 
 import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
-import { InputMasked } from '@/components/InputMasked/InputMasked'
-import CalendarSVG from '@/assets/calendar.svg'
+import { PasswordInput as PasswordInputComponent } from '@/components/Input/PasswordInput/PasswordInput'
 
 // ----------------------------------------------------------------------
 
 const meta = {
-  title: 'Components/InputMasked',
-  component: InputMasked,
+  title: 'Components/Inputs/PasswordInput',
+  component: PasswordInputComponent,
   decorators: (Story) => (
     <MantineProvider theme={theme}>
-      <Story />
+      <div style={{ maxWidth: '144px' }}>
+        <Story />
+      </div>
     </MantineProvider>
   ),
-} satisfies Meta<typeof InputMasked>
+} satisfies Meta<typeof PasswordInputComponent>
 
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof PasswordInputComponent>
 
 // ----------------------------------------------------------------------
 
-export const ComponentInputMasked: Story = {
-  args: { mask: '00/00', placeholder: '01/25', style: { maxWidth: '465px' } },
+export const PasswordInput: Story = {
+  args: {
+    label: 'CVV/CVC',
+  },
 }
 
-export const InputMaskedExpiryDate: Story = {
+export const PasswordInputError: Story = {
   args: {
-    fullWidth: true,
-    leftSection: <CalendarSVG />,
-    style: { maxWidth: '304px' },
-    mask: '00/00',
-    value: '1225',
+    label: 'CVV/CVC',
+    error: 'Укажите код',
   },
 }
 

@@ -4,28 +4,39 @@ import { MantineProvider } from '@/components/MainProvider'
 
 import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
-import { Text } from '@/components/Text/Text'
-import { Input } from '@/components/Input/Input'
+import { Input as InputComponent } from '@/components/Input/Input'
 
 // ----------------------------------------------------------------------
 
 const meta = {
-  title: 'Components/Input',
-  component: Input,
+  title: 'Components/Inputs/Input',
+  component: InputComponent,
   decorators: (Story) => (
     <MantineProvider theme={theme}>
-      <Story />
+      <div style={{ maxWidth: '465px' }}>
+        <Story />
+      </div>
     </MantineProvider>
   ),
-} satisfies Meta<typeof Text>
+} satisfies Meta<typeof InputComponent>
 
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof InputComponent>
 
 // ----------------------------------------------------------------------
 
-export const ComponentInput: Story = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  args: { placeholder: 'IVAN IVANOV', style: { maxWidth: '465px' } } as any,
+export const Input: Story = {
+  args: {
+    placeholder: 'IVAN IVANOV',
+    label: 'Имя на карте',
+  },
+}
+
+export const InputError: Story = {
+  args: {
+    placeholder: 'IVAN IVANOV',
+    label: 'Имя на карте',
+    error: 'Неправильный формат имени',
+  },
 }
 
 // ----------------------------------------------------------------------

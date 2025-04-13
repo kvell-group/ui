@@ -1,7 +1,40 @@
 .input {
+  padding: 19px 16px 19px;
   border-radius: var(--mantine-radius-xl);
   border: 1px solid var(--mantine-color-border-action-normal-0);
+  box-shadow: var(--mantine-shadows-xs);
   color: var(--mantine-color-text-base-tertiary-0);
-  padding: 18px 16px;
-  box-shadow: var(--mantine-shadow-xs);
+
+  &[data-error='true'] {
+    border: 1px solid var(--mantine-color-border-action-destructive-0);
+    margin-bottom: -2px;
+  }
+}
+
+.section[data-position='left'] {
+  padding-left: 10px;
+
+  & + input {
+    padding-left: 40px;
+  }
+}
+
+.section[data-position='right'] {
+  margin-right: 1rem;
+}
+
+.label {
+  margin-bottom: 0.25rem;
+}
+
+.error {
+  color: var(--mantine-color-text-status-destructive-0);
+  padding-left: 0.25rem;
+
+  &::before {
+    content: url('../../assets/error.svg');
+    position: relative;
+    top: 3px;
+    left: -0.25rem;
+  }
 }

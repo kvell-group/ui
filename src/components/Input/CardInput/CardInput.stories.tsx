@@ -5,41 +5,36 @@ import { MantineProvider } from '@/components/MainProvider'
 import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
 
-import { InputCard } from '@/components/InputCard'
-import { ChangeEvent, useState } from 'react'
+import { CardInput as CardInputComponent } from '@/components/Input/CardInput'
 
 // ----------------------------------------------------------------------
 
-const CardInputWrapper = () => {
-  const [value, setValue] = useState('')
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => setValue(e.target.value)
-
-  return (
-    <InputCard
-      value={value}
-      onChange={handleChange}
-      style={{ maxWidth: '465px' }}
-    />
-  )
-}
-
 const meta = {
-  title: 'Components/CardInput',
-  component: CardInputWrapper,
+  title: 'Components/Inputs/CardInput',
+  component: CardInputComponent,
   decorators: (Story) => (
     <MantineProvider theme={theme}>
-      <Story />
+      <div style={{ maxWidth: '465px' }}>
+        <Story />
+      </div>
     </MantineProvider>
   ),
-} satisfies Meta<typeof InputCard>
+} satisfies Meta<typeof CardInputComponent>
 
 type Story = StoryObj<typeof meta>
 
 // ----------------------------------------------------------------------
 
-export const ComponentCardInput: Story = {
-  args: { value: '' },
+export const CardInput: Story = {
+  args: { label: 'Номер карты', value: '' },
+}
+
+export const CardInputError: Story = {
+  args: {
+    error: 'Неправильный номер карты',
+    label: 'Номер карты',
+    value: '4111',
+  },
 }
 
 // ----------------------------------------------------------------------
