@@ -7,6 +7,15 @@
   letter-spacing: var(--mantine-letter-spacing-body-s);
 }
 
+h2.body-m-medium,
+.body-m-medium {
+  font-family: var(--mantine-font-family);
+  font-weight: 500;
+  font-size: var(--mantine-font-size-body-m);
+  line-height: var(--mantine-line-height-body-m);
+  letter-spacing: var(--mantine-letter-spacing-body-m);
+}
+
 /* caption */
 .caption-l-medium {
   font-family: var(--mantine-font-family);
@@ -16,10 +25,11 @@
   letter-spacing: var(--mantine-letter-spacing-caption-l);
 }
 
+p.caption-l-regular,
 .caption-l-regular {
   font-family: var(--mantine-font-family);
   font-weight: 400;
-  font-size: var(--mantine-font-size-caption-l-regular);
+  font-size: var(--mantine-font-size-caption-l);
   line-height: var(--mantine-line-height-caption-l);
   letter-spacing: var(--mantine-letter-spacing-caption-l);
 }

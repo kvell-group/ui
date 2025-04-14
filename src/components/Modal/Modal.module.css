@@ -1,0 +1,29 @@
+.root {
+  box-shadow: var(--mantine-shadows-lg);
+}
+
+.content {
+  border-radius: var(--mantine-radius-xl);
+  border: 1px solid var(--mantine-color-border-action-normal-0);
+  white-space: pre-wrap;
+  padding: 0.5rem 0.5rem;
+}
+
+.header {
+  padding-bottom: 0.25rem;
+}
+
+button.close {
+  position: absolute;
+  right: 0.25rem;
+  top: 0.4rem;
+  display: flex;
+  background-color: var(--mantine-color-background-button-tertiary-0);
+  border-radius: 50%;
+  --cb-size: 1.5rem;
+
+  & > svg {
+    color: var(--mantine-color-icon-base-secondary-0);
+    scale: 0.75;
+  }
+}

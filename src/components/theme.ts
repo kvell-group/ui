@@ -17,7 +17,15 @@ export const theme: MantineThemeOverride = {
     'border-action-normal': colorsTuple('#dee0e3'),
     'border-action-destructive': colorsTuple('#f7c3c0'),
 
+    //buttons
+    'background-button-tertiary': colorsTuple('#0a0f290a'),
+
+    //icons
+    'icon-base-secondary': colorsTuple('#0f132499'),
+    // icon/base/secondary
+
     //text
+    'text-base-secondary': colorsTuple('#0f132499'),
     'text-base-tertiary': colorsTuple('#0d112666'),
     'text-status-destructive': colorsTuple('#e6483d'),
   },
@@ -64,7 +72,8 @@ export const theme: MantineThemeOverride = {
   defaultRadius: 'sm',
   spacing: {
     //blank variables
-    'body-s': ' -0.20000000298023224px',
+    'body-m': '-0.20000000298023224px',
+    'body-s': '-0.20000000298023224px',
     'caption-l': '-0.10000000149011612px;',
     //mantine default variables
     xs: '0.625rem',
@@ -75,9 +84,9 @@ export const theme: MantineThemeOverride = {
   }, //for example
   fontSizes: {
     //blank variables
+    'body-m': '18px',
     'body-s-medium': '16px',
     'caption-l': '14px',
-    'caption-l-regular': '14px',
     // mantine default variables
     xs: '0.75rem',
     sm: '0.875rem',
@@ -87,6 +96,7 @@ export const theme: MantineThemeOverride = {
   }, //for example
   lineHeights: {
     //blank variables
+    'body-m': '26px',
     'body-s': '24px',
     'caption-l': '20px',
     // mantine default variables
@@ -103,7 +113,7 @@ export const theme: MantineThemeOverride = {
     xs: '0px 1px 2px 0px #14151A0D',
     // sm: '1px 1px 3px rgba(0, 0, 0, .25)',
     // md: '1px 1px 3px rgba(0, 0, 0, .25)',
-    // lg: '1px 1px 3px rgba(0, 0, 0, .25)',
+    lg: '0px 3px 6px -2px #14151a0d, 0px 10px 16px -3px #14151a14',
     // xl: '1px 1px 3px rgba(0, 0, 0, .25)',
   }, //for example
   respectReducedMotion: false, //default
