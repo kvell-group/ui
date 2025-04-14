@@ -15,9 +15,11 @@ export const theme: MantineThemeOverride = {
 
     //borders
     'border-action-normal': colorsTuple('#dee0e3'),
+    'border-action-destructive': colorsTuple('#f7c3c0'),
 
     //text
     'text-base-tertiary': colorsTuple('#0d112666'),
+    'text-status-destructive': colorsTuple('#e6483d'),
   },
   primaryShade: 6, // { light: 6, dark: 8 } default mantine by theme
   primaryColor: 'primary',

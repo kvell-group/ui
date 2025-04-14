@@ -4,28 +4,37 @@ import { MantineProvider } from '@/components/MainProvider'
 
 import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
-import { Text } from '@/components/Text/Text'
-import { Input } from '@/components/Input/Input'
+import { CvvInput as CvvInputComponent } from '@/components/Inputs/CvvInput'
 
 // ----------------------------------------------------------------------
 
 const meta = {
-  title: 'Components/Input',
-  component: Input,
+  title: 'Components/Inputs/CvvInput',
+  component: CvvInputComponent,
   decorators: (Story) => (
     <MantineProvider theme={theme}>
-      <Story />
+      <div style={{ maxWidth: '304px' }}>
+        <Story />
+      </div>
     </MantineProvider>
   ),
-} satisfies Meta<typeof Text>
+} satisfies Meta<typeof CvvInputComponent>
 
 type Story = StoryObj<typeof meta>
 
 // ----------------------------------------------------------------------
 
-export const ComponentInput: Story = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  args: { placeholder: 'IVAN IVANOV', style: { maxWidth: '465px' } } as any,
+export const CvvInput: Story = {
+  args: {
+    label: 'CVV/CVC',
+  },
+}
+
+export const CvvInputError: Story = {
+  args: {
+    label: 'CVV/CVC',
+    error: 'Укажите код',
+  },
 }
 
 // ----------------------------------------------------------------------

@@ -4,36 +4,36 @@ import { MantineProvider } from '@/components/MainProvider'
 
 import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
-import { InputMasked } from '@/components/InputMasked/InputMasked'
-import CalendarSVG from '@/assets/calendar.svg'
+
+import { CardInput as CardInputComponent } from '@/components/Inputs/CardInput'
 
 // ----------------------------------------------------------------------
 
 const meta = {
-  title: 'Components/InputMasked',
-  component: InputMasked,
+  title: 'Components/Inputs/CardInput',
+  component: CardInputComponent,
   decorators: (Story) => (
     <MantineProvider theme={theme}>
-      <Story />
+      <div style={{ maxWidth: '465px' }}>
+        <Story />
+      </div>
     </MantineProvider>
   ),
-} satisfies Meta<typeof InputMasked>
+} satisfies Meta<typeof CardInputComponent>
 
 type Story = StoryObj<typeof meta>
 
 // ----------------------------------------------------------------------
 
-export const ComponentInputMasked: Story = {
-  args: { mask: '00/00', placeholder: '01/25', style: { maxWidth: '465px' } },
+export const CardInput: Story = {
+  args: { label: 'Номер карты', value: '' },
 }
 
-export const InputMaskedExpiryDate: Story = {
+export const CardInputError: Story = {
   args: {
-    fullWidth: true,
-    leftSection: <CalendarSVG />,
-    style: { maxWidth: '304px' },
-    mask: '00/00',
-    value: '1225',
+    error: 'Неправильный номер карты',
+    label: 'Номер карты',
+    value: '4111',
   },
 }
 
