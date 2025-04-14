@@ -1,11 +1,16 @@
 import { IMaskInput } from 'react-imask'
 import { Input } from '@/components/Inputs'
-import { InputProps } from '@/components/Inputs/types'
 import { forwardRef } from 'react'
+import { InputBaseProps } from '@mantine/core'
 
 // ----------------------------------------------------------------------
 
-export const MaskedInput = forwardRef((props: InputProps, ref) => {
+type MaskedInputProps = InputBaseProps &
+  Omit<React.ComponentPropsWithoutRef<typeof IMaskInput>, keyof InputBaseProps>
+
+// ----------------------------------------------------------------------
+
+export const MaskedInput = forwardRef<HTMLInputElement, MaskedInputProps>((props, ref) => {
   return (
     <Input
       ref={ref}
