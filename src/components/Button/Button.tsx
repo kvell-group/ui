@@ -8,7 +8,7 @@ import { ExtendedButtonVariant } from '@/components/Button/types'
 
 // ----------------------------------------------------------------------
 
-type ButtonProps = BaseButtonProps & { variant?: ExtendedButtonVariant } & ElementProps<'button'>
+type ButtonProps = BaseButtonProps & ElementProps<'button'> & { variant?: ExtendedButtonVariant }
 
 export const Button = forwardRef((props: ButtonProps, ref: Ref<HTMLButtonElement>) => {
   return (
