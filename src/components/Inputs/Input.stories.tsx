@@ -4,36 +4,38 @@ import { MantineProvider } from '@/components/MainProvider'
 
 import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
-import { PasswordInput as PasswordInputComponent } from '@/components/Input/PasswordInput/PasswordInput'
+import { Input as InputComponent } from '@/components/Inputs/Input'
 
 // ----------------------------------------------------------------------
 
 const meta = {
-  title: 'Components/Inputs/PasswordInput',
-  component: PasswordInputComponent,
+  title: 'Components/Inputs/Input',
+  component: InputComponent,
   decorators: (Story) => (
     <MantineProvider theme={theme}>
-      <div style={{ maxWidth: '144px' }}>
+      <div style={{ maxWidth: '465px' }}>
         <Story />
       </div>
     </MantineProvider>
   ),
-} satisfies Meta<typeof PasswordInputComponent>
+} satisfies Meta<typeof InputComponent>
 
-type Story = StoryObj<typeof PasswordInputComponent>
+type Story = StoryObj<typeof InputComponent>
 
 // ----------------------------------------------------------------------
 
-export const PasswordInput: Story = {
+export const Input: Story = {
   args: {
-    label: 'CVV/CVC',
+    placeholder: 'IVAN IVANOV',
+    label: 'Имя на карте',
   },
 }
 
-export const PasswordInputError: Story = {
+export const InputError: Story = {
   args: {
-    label: 'CVV/CVC',
-    error: 'Укажите код',
+    placeholder: 'IVAN IVANOV',
+    label: 'Имя на карте',
+    error: 'Неправильный формат имени',
   },
 }
 

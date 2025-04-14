@@ -7,8 +7,8 @@ export { theme } from '@/components/theme'
 
 // components
 export { Button } from '@/components/Button'
-export { Input } from '@/components/Input'
-export { CardInput } from '@/components/Input/CardInput'
-export { MaskedInput } from '@/components/Input/MaskedInput'
-export { PasswordInput } from '@/components/Input/PasswordInput'
+export { Input } from '@/components/Inputs'
+export { CardInput } from '@/components/Inputs/CardInput'
+export { MaskedInput } from '@/components/Inputs/MaskedInput'
+export { PasswordInput } from '@/components/Inputs/PasswordInput'
 export { Text } from '@/components/Text'

@@ -1,7 +1,7 @@
 import CardSVG from '@/assets/card.svg'
-import { MaskedInput } from '@/components/Input/MaskedInput'
-import { useCardLogo } from '@/components/Input/CardInput/useCardLogo'
-import type { InputProps } from '@/components/Input/types'
+import { MaskedInput } from '@/components/Inputs/MaskedInput'
+import { useCardLogo } from '@/components/Inputs/CardInput/useCardLogo'
+import type { InputProps } from '@/components/Inputs/types'
 
 // ----------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 import { IMaskInput } from 'react-imask'
-import { Input } from '@/components/Input'
-import { InputProps } from '@/components/Input/types'
+import { Input } from '@/components/Inputs'
+import { InputProps } from '@/components/Inputs/types'
 
 // ----------------------------------------------------------------------
 

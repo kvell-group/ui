@@ -4,14 +4,13 @@ import { MantineProvider } from '@/components/MainProvider'
 
 import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
-
-import { CardInput as CardInputComponent } from '@/components/Input/CardInput'
+import { PasswordInput as PasswordInputComponent } from '@/components/Inputs/PasswordInput/PasswordInput'
 
 // ----------------------------------------------------------------------
 
 const meta = {
-  title: 'Components/Inputs/CardInput',
-  component: CardInputComponent,
+  title: 'Components/Inputs/PasswordInput',
+  component: PasswordInputComponent,
   decorators: (Story) => (
     <MantineProvider theme={theme}>
       <div style={{ maxWidth: '465px' }}>
@@ -19,21 +18,22 @@ const meta = {
       </div>
     </MantineProvider>
   ),
-} satisfies Meta<typeof CardInputComponent>
+} satisfies Meta<typeof PasswordInputComponent>
 
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof PasswordInputComponent>
 
 // ----------------------------------------------------------------------
 
-export const CardInput: Story = {
-  args: { label: 'Номер карты', value: '' },
+export const PasswordInput: Story = {
+  args: {
+    label: 'Введите пароль',
+  },
 }
 
-export const CardInputError: Story = {
+export const PasswordInputError: Story = {
   args: {
-    error: 'Неправильный номер карты',
-    label: 'Номер карты',
-    value: '4111',
+    label: 'Введите пароль',
+    error: 'Неверный пароль',
   },
 }
 

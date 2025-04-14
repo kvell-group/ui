@@ -4,7 +4,7 @@ import { MantineProvider } from '@/components/MainProvider'
 
 import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
-import { MaskedInput as MaskedInputComponent } from '@/components/Input/MaskedInput'
+import { MaskedInput as MaskedInputComponent } from '@/components/Inputs/MaskedInput'
 import CalendarSVG from '@/assets/calendar.svg'
 
 // ----------------------------------------------------------------------

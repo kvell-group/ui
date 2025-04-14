@@ -1,5 +1,5 @@
 import { InputBase } from '@mantine/core'
-import classNames from '@/components/Input/Input.module.css'
+import classNames from '@/components/Inputs/Input.module.css'
 import textClassNames from '@/components/Text/Text.module.css'
 import clsx from 'clsx'
 
