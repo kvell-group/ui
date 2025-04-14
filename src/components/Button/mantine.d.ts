@@ -1,9 +1,9 @@
-import { ButtonVariant } from '@mantine/core';
+import { ExtendedButtonVariant } from '@/components/Button/types'
 
-type ExtendedButtonVariant = ButtonVariant | 'primary' | 'secondary' | 'tertiary';
+// ----------------------------------------------------------------------
 
 declare module '@mantine/core' {
   export interface ButtonProps {
-    variant?: ExtendedButtonVariant;
+    variant?: ExtendedButtonVariant
   }
 }

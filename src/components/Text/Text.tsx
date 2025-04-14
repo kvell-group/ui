@@ -1,20 +1,15 @@
-import { TextProps as TextBaseProps } from '@mantine/core'
+import type { TextProps as TextBaseProps } from '@mantine/core'
 import { Text as TextBase } from '@mantine/core'
 import { ReactNode } from 'react'
 
-import classesNames from '@/components/Text/Text.module.css'
+import classesNames from '@/styles/typography.module.css'
+import type { TextVariants } from '@/components/Text/types'
 
 // ----------------------------------------------------------------------
 
-type TextVariants =
-  | TextBaseProps['variant']
-  | 'body-s-medium'
-  | 'caption-l-medium'
-  | 'caption-l-regular'
-
 export type TextProps = Omit<TextBaseProps, 'variant'> & {
   children: ReactNode
-  variant: TextVariants
+  variant?: TextVariants
 }
 
 export const Text = (props: TextProps) => (

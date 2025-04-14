@@ -5,6 +5,7 @@ import { MantineProvider } from '@/components/MainProvider'
 import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
 import { Text } from '@/components/Text/Text'
+import { FontVariants } from '@/constants/font-variants'
 
 // ----------------------------------------------------------------------
 
@@ -25,12 +26,11 @@ type Story = StoryObj<typeof meta>
 export const ComponentText: Story = {
   args: {
     children: 'Компонент типографии',
-    variant: 'tertiary',
   },
   argTypes: {
     variant: {
       control: 'select',
-      options: ['body-s-medium', 'caption-l-medium', 'caption-l-regular', 'text'],
+      options: FontVariants,
     },
   },
 }
