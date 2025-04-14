@@ -30,7 +30,7 @@ const ModalWrapper = () => {
         >
           <Text
             variant='caption-l-regular'
-            c='text-vase-secondary.0'
+            c='text-base-secondary.0'
             mb='1.5rem'
             display='block'
           >
