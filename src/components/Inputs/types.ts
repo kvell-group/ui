@@ -2,4 +2,5 @@ import { ElementProps, InputBaseProps } from '@mantine/core'
 
 // ----------------------------------------------------------------------
 
-export type InputProps = InputBaseProps & ElementProps<'input'> & { value?: string; mask?: string }
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type InputProps = InputBaseProps & ElementProps<'input'> & { value?: string; mask?: any }
