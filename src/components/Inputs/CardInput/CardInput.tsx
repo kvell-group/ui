@@ -4,6 +4,11 @@ import { useCardLogo } from '@/components/Inputs/CardInput/useCardLogo'
 import type { MaskedInputProps } from '@/components/Inputs/types'
 import { forwardRef } from 'react'
 import { CARD_NUMBER_MASK } from '@/constants/masks'
+import { IMask } from 'react-imask'
+
+// ----------------------------------------------------------------------
+
+const mask = IMask.createMask({ mask: CARD_NUMBER_MASK })
 
 // ----------------------------------------------------------------------
 
@@ -14,7 +19,7 @@ export const CardInput = forwardRef<HTMLInputElement, MaskedInputProps>((props, 
     <MaskedInput
       ref={ref}
       {...props}
-      mask={CARD_NUMBER_MASK}
+      mask={mask}
       rightSection={CardLogo && <CardLogo />}
       leftSection={<CardSVG />}
       placeholder='____ ____ ____ ____'

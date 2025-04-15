@@ -22,7 +22,7 @@ const meta = {
   ),
 } satisfies Meta<typeof MaskedInputComponent>
 
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof MaskedInputComponent>
 
 // ----------------------------------------------------------------------
 

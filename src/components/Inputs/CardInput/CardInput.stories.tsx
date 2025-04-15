@@ -21,7 +21,7 @@ const meta = {
   ),
 } satisfies Meta<typeof CardInputComponent>
 
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof CardInputComponent>
 
 // ----------------------------------------------------------------------
 

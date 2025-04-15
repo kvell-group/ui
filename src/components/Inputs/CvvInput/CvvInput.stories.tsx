@@ -20,7 +20,7 @@ const meta = {
   ),
 } satisfies Meta<typeof CvvInputComponent>
 
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof CvvInputComponent>
 
 // ----------------------------------------------------------------------
 
