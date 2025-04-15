@@ -1,8 +1,8 @@
-export const AUTO_LOADER_SIZE = 'auto'
-export const SM_LOADER_SIZE = 'sm'
-export const MD_LOADER_SIZE = 'md'
-export const LG_LOADER_SIZE = 'lg'
+export const LOADER_SIZE_AUTO = 'auto'
+export const LOADER_SIZE_SM = 'sm'
+export const LOADER_SIZE_MD = 'md'
+export const LOADER_SIZE_LG = 'lg'
 
 // ----------------------------------------------------------------------
 
-export const LoaderSizes = [AUTO_LOADER_SIZE, SM_LOADER_SIZE, MD_LOADER_SIZE, LG_LOADER_SIZE]
+export const LoaderSizes = [LOADER_SIZE_AUTO, LOADER_SIZE_SM, LOADER_SIZE_MD, LOADER_SIZE_LG]
