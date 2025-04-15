@@ -28,6 +28,9 @@ export const theme: MantineThemeOverride = {
     'text-base-secondary': colorsTuple('#0f132499'),
     'text-base-tertiary': colorsTuple('#0d112666'),
     'text-status-destructive': colorsTuple('#e6483d'),
+
+    //typography
+    'typography-secondary': colorsTuple('#91989e'),
   },
   primaryShade: 6, // { light: 6, dark: 8 } default mantine by theme
   primaryColor: 'primary',
