@@ -1,10 +1,19 @@
+/* heading */
+.h6-bold {
+  font-family: var(--mantine-font-family);
+  font-weight: 700;
+  font-size: var(--mantine-font-size-h6);
+  line-height: var(--mantine-line-height-h6);
+  letter-spacing: var(--mantine-spacing-h6);
+}
+
 /* body */
 .body-s-medium {
   font-family: var(--mantine-font-family);
   font-weight: 500;
   font-size: var(--mantine-font-size-body-s-medium);
   line-height: var(--mantine-line-height-body-s);
-  letter-spacing: var(--mantine-letter-spacing-body-s);
+  letter-spacing: var(--mantine-spacing-body-s);
 }
 
 h2.body-m-medium,
@@ -13,7 +22,7 @@ h2.body-m-medium,
   font-weight: 500;
   font-size: var(--mantine-font-size-body-m);
   line-height: var(--mantine-line-height-body-m);
-  letter-spacing: var(--mantine-letter-spacing-body-m);
+  letter-spacing: var(--mantine-spacing-body-m);
 }
 
 .body-l-bold {
@@ -21,7 +30,7 @@ h2.body-m-medium,
   font-weight: 700;
   font-size: var(--mantine-font-size-body-l);
   line-height: var(--mantine-line-height-body-l);
-  letter-spacing: var(--mantine-letter-spacing-body-l);
+  letter-spacing: var(--mantine-spacing-body-l);
 }
 
 /* caption */
@@ -30,7 +39,7 @@ h2.body-m-medium,
   font-weight: 500;
   font-size: var(--mantine-font-size-caption-l);
   line-height: var(--mantine-line-height-caption-l);
-  letter-spacing: var(--mantine-letter-spacing-caption-l);
+  letter-spacing: var(--mantine-spacing-caption-l);
 }
 
 p.caption-l-regular,
@@ -39,5 +48,5 @@ p.caption-l-regular,
   font-weight: 400;
   font-size: var(--mantine-font-size-caption-l);
   line-height: var(--mantine-line-height-caption-l);
-  letter-spacing: var(--mantine-letter-spacing-caption-l);
+  letter-spacing: var(--mantine-spacing-caption-l);
 }
