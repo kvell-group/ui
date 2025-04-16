@@ -1,16 +1,30 @@
 .root {
   box-shadow: var(--mantine-shadows-lg);
+  width: 100%;
 }
 
 .content {
   border-radius: var(--mantine-radius-xl);
   border: 1px solid var(--mantine-color-border-action-normal-0);
   white-space: pre-wrap;
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem;
+
+  @media (max-width: $mantine-breakpoint-xs) {
+    width: 100%;
+    border-radius: var(--mantine-radius-xl) var(--mantine-radius-xl) 0 0;
+  }
 }
 
 .header {
   padding-bottom: 0.25rem;
+}
+
+.inner {
+  @media (max-width: $mantine-breakpoint-xs) {
+    align-items: end;
+    padding: 0;
+    width: auto;
+  }
 }
 
 button.close {

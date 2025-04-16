@@ -9,7 +9,7 @@ import { Modal } from '@/components/Modal'
 import { Button } from '@/components/Button'
 
 import { useDisclosure } from '@mantine/hooks'
-import { Container, Flex } from '@mantine/core'
+import { Flex } from '@mantine/core'
 
 // ----------------------------------------------------------------------
 
@@ -22,38 +22,32 @@ const ModalWrapper = () => {
         opened={opened}
         onClose={close}
         title={'Невозможно сменить \nспособ оплаты'}
-        size='auto'
       >
-        <Container
-          w='350px'
-          p={0}
+        <Text
+          variant='caption-l-regular'
+          c='text-base-secondary.0'
+          mb='1.5rem'
+          display='block'
         >
-          <Text
-            variant='caption-l-regular'
-            c='text-base-secondary.0'
-            mb='1.5rem'
-            display='block'
+          Чтобы оплатить другим способом, необходимо <br />
+          вернуться на сайт и повторить платёж
+        </Text>
+        <Flex gap='sm'>
+          <Button
+            variant='secondary'
+            size='xs'
+            fullWidth
           >
-            Чтобы оплатить другим способом, необходимо <br />
-            вернуться на сайт и повторить платёж
-          </Text>
-          <Flex gap='sm'>
-            <Button
-              variant='secondary'
-              size='xs'
-              fullWidth
-            >
-              Вернуться на сайт
-            </Button>
-            <Button
-              variant='primary'
-              size='xs'
-              fullWidth
-            >
-              Остаться
-            </Button>
-          </Flex>
-        </Container>
+            Вернуться на сайт
+          </Button>
+          <Button
+            variant='primary'
+            size='xs'
+            fullWidth
+          >
+            Остаться
+          </Button>
+        </Flex>
       </Modal>
 
       <Button
