@@ -77,6 +77,7 @@ export const theme: MantineThemeOverride = {
     //blank variables
     'body-m': '-0.20000000298023224px',
     'body-s': '-0.20000000298023224px',
+    'body-l': '-0.20000000298023224px',
     'caption-l': '-0.10000000149011612px;',
     //mantine default variables
     xs: '0.625rem',
@@ -88,6 +89,7 @@ export const theme: MantineThemeOverride = {
   fontSizes: {
     //blank variables
     'body-m': '18px',
+    'body-l': '20px',
     'body-s-medium': '16px',
     'caption-l': '14px',
     // mantine default variables
@@ -101,6 +103,7 @@ export const theme: MantineThemeOverride = {
     //blank variables
     'body-m': '26px',
     'body-s': '24px',
+    'body-l': '28px',
     'caption-l': '20px',
     // mantine default variables
     xs: '1.4',
