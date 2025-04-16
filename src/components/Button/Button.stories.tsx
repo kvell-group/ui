@@ -46,6 +46,9 @@ export const ComponentButton: Story = {
     disabled: {
       control: 'boolean',
     },
+    loading: {
+      control: 'boolean',
+    },
   },
 }
 

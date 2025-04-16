@@ -21,13 +21,21 @@
     background-color: var(--mantine-color-secondary-0);
     color: var(--mantine-color-primary);
     padding: 10px 12px;
-    border: 1px solid #dee0e3;
+    border: 1px solid var(--mantine-color-border-action-normal-0);
+
+    .loader {
+      --button-color: var(--mantine-color-gray-5);
+    }
   }
 
   &[data-variant='tertiary'] {
     background-color: var(--mantine-color-tertiary-0);
     color: var(--mantine-color-primary);
     padding: 10px 12px;
+
+    .loader {
+      --button-color: var(--mantine-color-gray-5);
+    }
   }
 
   &[data-size='xs'] {
