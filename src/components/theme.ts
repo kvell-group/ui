@@ -22,6 +22,7 @@ export const theme: MantineThemeOverride = {
 
     //icons
     'icon-base-secondary': colorsTuple('#0f132499'),
+    'icon-base-tertiary': colorsTuple('#0D112666'),
     // icon/base/secondary
 
     //text
