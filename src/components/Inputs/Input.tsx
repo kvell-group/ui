@@ -1,4 +1,4 @@
-import { InputBase } from '@mantine/core'
+import { TextInput } from '@mantine/core'
 import classNames from '@/components/Inputs/Input.module.css'
 import textClassNames from '@/styles/typography.module.css'
 import clsx from 'clsx'
@@ -15,6 +15,6 @@ const errorClassNames = clsx(error, captionLRegular)
 
 // ----------------------------------------------------------------------
 
-export const Input = InputBase.withProps({
+export const Input = TextInput.withProps({
   classNames: { ...restClassNames, input: inputClassNames, error: errorClassNames },
 })

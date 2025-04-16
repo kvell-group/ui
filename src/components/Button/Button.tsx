@@ -2,7 +2,7 @@ import { createPolymorphicComponent, Button as MantineButton } from '@mantine/co
 import type { ButtonProps as BaseButtonProps } from '@mantine/core'
 import '@mantine/core/styles/UnstyledButton.css'
 import '@mantine/core/styles/Button.css'
-import classesNames from '@/components/Button/Button.module.css'
+import classNames from '@/components/Button/Button.module.css'
 import { forwardRef } from 'react'
 import { ExtendedButtonVariant } from '@/components/Button/types'
 
@@ -16,7 +16,7 @@ export const Button = createPolymorphicComponent<'button', ButtonProps>(
       <MantineButton
         ref={ref}
         {...props}
-        classNames={classesNames}
+        classNames={classNames}
       />
     )
   })
