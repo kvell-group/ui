@@ -19,6 +19,7 @@ export const theme: MantineThemeOverride = {
 
     //buttons
     'background-button-tertiary': colorsTuple('#0a0f290a'),
+    'background-button-primary-disabled': colorsTuple('#e9eaec'),
 
     //icons
     'icon-base-secondary': colorsTuple('#0f132499'),
@@ -28,6 +29,7 @@ export const theme: MantineThemeOverride = {
     //text
     'text-base-secondary': colorsTuple('#0f132499'),
     'text-base-tertiary': colorsTuple('#0d112666'),
+    'text-base-quaternary': colorsTuple('#0a0f2940'),
     'text-status-destructive': colorsTuple('#e6483d'),
 
     //typography

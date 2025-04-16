@@ -33,4 +33,9 @@
   &[data-size='xs'] {
     padding: 6px;
   }
+
+  &[data-disabled='true'] {
+    background-color: var(--mantine-color-background-button-primary-disabled-0);
+    color: var(--mantine-color-text-base-quaternary-0);
+  }
 }

@@ -43,6 +43,9 @@ export const ComponentButton: Story = {
       control: 'select',
       options: ButtonVariants,
     },
+    disabled: {
+      control: 'boolean',
+    },
   },
 }
 
