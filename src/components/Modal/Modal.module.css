@@ -23,7 +23,7 @@
   @media (max-width: $mantine-breakpoint-xs) {
     align-items: end;
     padding: 0;
-    width: auto;
+    width: 100%;
   }
 }
 
