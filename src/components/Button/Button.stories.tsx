@@ -9,7 +9,9 @@ import { theme } from '@/components/theme'
 import { Button } from '@/components/Button'
 import { Text } from '@/components/Text/Text'
 import {
+  ButtonSizes,
   ButtonVariants,
+  LG_BUTTON_SIZE,
   PRIMARY_BUTTON_VARIANT,
   SECONDARY_BUTTON_VARIANT,
   TERTIARY_BUTTON_VARIANT,
@@ -49,6 +51,10 @@ export const ComponentButton: Story = {
     loading: {
       control: 'boolean',
     },
+    size: {
+      control: 'select',
+      options: ButtonSizes,
+    },
   },
 }
 
@@ -59,15 +65,14 @@ export const PrimaryButton: Story = {
     fullWidth: true,
     style: { maxWidth: '465px' },
     children: <Text variant={BODY_S_MEDIUM_FONT_VARIANT}>Оплатить 7 605,30 RUB</Text>,
+    size: LG_BUTTON_SIZE,
   },
 }
 
 export const SecondaryButton: Story = {
   args: {
     variant: SECONDARY_BUTTON_VARIANT,
-    fullWidth: true,
     leftSection: <ArrowLeftSVG />,
-    style: { maxWidth: '255px' },
     children: 'Вернуться на сайт продавца',
   },
 }
@@ -75,9 +80,7 @@ export const SecondaryButton: Story = {
 export const TertiaryButton: Story = {
   args: {
     variant: TERTIARY_BUTTON_VARIANT,
-    fullWidth: true,
     leftSection: <ArrowLeftSVG />,
-    style: { maxWidth: '255px' },
     children: 'Сохранённые карты',
   },
 }

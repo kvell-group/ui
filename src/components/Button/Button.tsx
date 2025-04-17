@@ -12,10 +12,12 @@ type ButtonProps = BaseButtonProps & { variant?: ExtendedButtonVariant }
 
 export const Button = createPolymorphicComponent<'button', ButtonProps>(
   forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
+    const { size = 'md', ...resProps } = props
     return (
       <MantineButton
         ref={ref}
-        {...props}
+        size={size}
+        {...resProps}
         classNames={classNames}
       />
     )

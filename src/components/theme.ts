@@ -69,14 +69,13 @@ export const theme: MantineThemeOverride = {
   }, */
   radius: {
     // same name from blank and mantine
-    xl: '12px',
-    //mantine default variables
-    xs: '0.125rem',
-    sm: '0.25rem',
+    xl: '0.75rem',
+    xs: '0.25rem',
+    sm: '0.375rem',
     md: '0.5rem',
-    lg: '2rem',
+    lg: '0.625rem',
   },
-  defaultRadius: 'sm',
+  defaultRadius: 'xl',
   spacing: {
     //blank variables
     h6: '-0.30000001192092896px',
