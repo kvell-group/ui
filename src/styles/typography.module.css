@@ -50,3 +50,11 @@ p.caption-l-regular,
   line-height: var(--mantine-line-height-caption-l);
   letter-spacing: var(--mantine-spacing-caption-l);
 }
+
+.caption-m-regular {
+  font-family: var(--mantine-font-family);
+  font-weight: 400;
+  font-size: var(--mantine-font-size-caption-m);
+  line-height: var(--mantine-line-height-caption-m);
+  letter-spacing: var(--mantine-spacing-caption-m);
+}

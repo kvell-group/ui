@@ -9,6 +9,7 @@ export const BODY_L_BOLD_FONT_VARIANT = 'body-l-bold' as const
 //caption
 export const CAPTION_L_MEDIUM_FONT_VARIANT = 'caption-l-medium' as const
 export const CAPTION_L_REGULAR_FONT_VARIANT = 'caption-l-regular' as const
+export const CAPTION_M_REGULAR_FONT_VARIANT = 'caption-m-regular' as const
 
 // ----------------------------------------------------------------------
 
@@ -19,4 +20,5 @@ export const FontVariants = [
   BODY_L_BOLD_FONT_VARIANT,
   CAPTION_L_MEDIUM_FONT_VARIANT,
   CAPTION_L_REGULAR_FONT_VARIANT,
+  CAPTION_M_REGULAR_FONT_VARIANT,
 ]
