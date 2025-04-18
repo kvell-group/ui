@@ -13,3 +13,16 @@
   --label-offset-start: 1rem;
   color: var(--mantine-color-primary);
 }
+
+.error {
+  color: var(--mantine-color-text-status-destructive-0);
+  padding-left: 0.25rem;
+  margin-top: 0;
+
+  &::before {
+    content: url('../../assets/error.svg');
+    position: relative;
+    top: 3px;
+    left: -0.25rem;
+  }
+}

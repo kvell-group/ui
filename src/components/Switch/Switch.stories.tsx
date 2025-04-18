@@ -28,6 +28,9 @@ export const ComponentSwitch: Story = {
   },
   argTypes: {
     checked: { control: 'boolean' },
+    error: {
+      control: 'text',
+    },
   },
 }
 
