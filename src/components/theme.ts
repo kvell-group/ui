@@ -96,7 +96,7 @@ export const theme: MantineThemeOverride = {
     h6: '24px',
     'body-m': '18px',
     'body-l': '20px',
-    'body-s-medium': '16px',
+    'body-s': '16px',
     'caption-l': '14px',
     'caption-m': '12px',
     // mantine default variables
