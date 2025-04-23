@@ -16,6 +16,7 @@ export const theme: MantineThemeOverride = {
     //borders
     'border-action-normal': colorsTuple('#dee0e3'),
     'border-action-destructive': colorsTuple('#f7c3c0'),
+    'border-base-alpha': colorsTuple('#0a0f2914'),
 
     //buttons
     'background-button-tertiary': colorsTuple('#0a0f290a'),
