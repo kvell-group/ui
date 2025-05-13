@@ -1,4 +1,4 @@
-import CardSVG from '@/assets/card.svg'
+import CardSVG from '@/assets/card.svg?no-inline'
 import { MaskedInput } from '@/components/Inputs/MaskedInput'
 import { useCardLogo } from '@/components/Inputs/CardInput/useCardLogo'
 import type { MaskedInputProps } from '@/components/Inputs/types'
@@ -12,7 +12,7 @@ const mask = IMask.createMask({ mask: CARD_NUMBER_MASK })
 
 // ----------------------------------------------------------------------
 
-export const CardInput = forwardRef<HTMLInputElement, MaskedInputProps>((props, ref) => {
+export const CardInputTest = forwardRef<HTMLInputElement, MaskedInputProps>((props, ref) => {
   const CardLogo = useCardLogo(props.value)
 
   return (
