@@ -14,6 +14,7 @@ export { CardInput } from '@/components/Inputs/CardInput'
 export { MaskedInput } from '@/components/Inputs/MaskedInput'
 export { PasswordInput } from '@/components/Inputs/PasswordInput'
 export { CvvInput } from '@/components/Inputs/CvvInput'
+export { CardInputTest } from '@/components/Inputs/CardInputTest'
 
 export { Loader } from '@/components/Loader'
 export { Modal } from '@/components/Modal'
