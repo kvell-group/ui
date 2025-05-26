@@ -18,9 +18,11 @@
     "format:fix": "prettier --write .",
     "build-storybook": "storybook build"
   },
-  "peerDependencies": {
+  "dependencies": {
     "@mantine/core": "^8.0.1",
-    "@mantine/hooks": "^8.0.1",
+    "@mantine/hooks": "^8.0.1"
+  },
+  "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-imask": "^7.6.1",
