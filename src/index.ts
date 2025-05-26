@@ -19,8 +19,5 @@ export { Text } from './components/Text'
 //providers
 export { KvellUiProvider } from './components/KvellUiProvider'
 
-//re-exports v1
-export * from '@mantine/core'
-
-//re-export v2
-export { BaseDivider } from './components/base-components/Divider'
+//base-components
+export { Divider } from './components/base-components/Divider'

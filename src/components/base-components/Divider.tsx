@@ -1,2 +1,2 @@
 import '@mantine/core/styles/Divider.layer.css'
-export { Divider as BaseDivider } from '@mantine/core'
+export { Divider } from '@mantine/core'
