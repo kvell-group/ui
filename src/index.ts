@@ -1,8 +1,8 @@
-// constants
-export { theme } from './components/theme'
-
 // components
 export { Button } from './components/Button'
+
+// constants
+export { theme } from './components/theme'
 
 //inputs
 export { Input } from './components/Inputs'
@@ -15,3 +15,9 @@ export { Loader } from './components/Loader'
 export { Modal } from './components/Modal'
 export { Switch } from './components/Switch'
 export { Text } from './components/Text'
+
+//providers
+export { KvellUiProvider } from './components/KvellUiProvider'
+
+//re-exports
+export * from '@mantine/core'
