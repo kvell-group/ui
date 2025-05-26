@@ -4,7 +4,7 @@ import { MantineProvider } from '@/components/MainProvider'
 
 import '@mantine/core/styles.css'
 import { theme } from '@/components/theme'
-import { Checkbox as CheckboxComponent } from '@/components/Inputs/Checkbox'
+import { Checkbox as CheckboxComponent } from '@/components/Inputs/Checkbox1'
 
 // ----------------------------------------------------------------------
 
