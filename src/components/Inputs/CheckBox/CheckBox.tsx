@@ -1,6 +1,6 @@
 import { Checkbox as MantineCheckbox } from '@mantine/core'
 import textClassNames from '../../../styles/typography.module.css'
-import classNames from './CheckBox.module.css'
+import classNames from './Checkbox.module.css'
 import { CAPTION_L_REGULAR_FONT_VARIANT } from '../../../constants/font-variants'
 import clsx from 'clsx'
 
