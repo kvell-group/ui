@@ -12,11 +12,11 @@
   ],
   "exports": {
     ".": {
-      "import": "./src/index.js",
+      "import": "./src/index.ts",
       "types": "./src/index.ts"
     },
     "./mantine": {
-      "import": "./src/core-components/mantine.js",
+      "import": "./src/core-components/mantine.ts",
       "types": "./src/core-components/mantine.ts"
     }
   },
