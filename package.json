@@ -9,7 +9,7 @@
   ],
   "exports": {
     ".": "./src/index.js",
-    "./mantine": "./src/core-components/index.js"
+    "./mantine": "./src/core-components/mantine.js"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
