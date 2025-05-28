@@ -21,4 +21,6 @@ export { Text } from './components/Text'
 export { KvellUiProvider } from './components/KvellUiProvider'
 
 //core-components
+// ----------------------------------------------------------------------
+//Miscellaneous
 export { Divider } from './core-components/Divider'
