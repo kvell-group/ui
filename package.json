@@ -16,8 +16,8 @@
       "types": "./src/index.ts"
     },
     "./mantine": {
-      "import": "./src/core-components/mantine.ts",
-      "types": "./src/core-components/mantine.ts"
+      "import": "./src/core-components/index.ts",
+      "types": "./src/core-components/index.ts"
     }
   },
   "scripts": {
