@@ -1,6 +1,6 @@
 import { MaskedInput } from '../MaskedInput'
 import passwordClassNames from './CvvInput.module.css'
-import baseInputClassNames from '../Input.module.css'
+import baseInputClassNames from '../Input/Input.module.css'
 import clsx from 'clsx'
 import type { MaskedInputProps } from '../types'
 import { forwardRef } from 'react'
@@ -22,6 +22,7 @@ export const CvvInput = forwardRef<HTMLInputElement, MaskedInputProps>((props, r
     ref={ref}
     inputMode='numeric'
     autoComplete='cc-csc'
+    placeholder='123'
     {...props}
     mask={mask}
     classNames={{ ...restClassNames, input: classNames }}

@@ -1,5 +1,5 @@
 import { IMaskInput } from 'react-imask'
-import { Input } from '../Input'
+import { Input } from '../Input/Input'
 import { forwardRef } from 'react'
 import type { MaskedInputProps } from '../types'
 

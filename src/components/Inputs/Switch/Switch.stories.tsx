@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { KvellUiProvider } from '@/components/KvellUiProvider'
 
 import { theme } from '@/components/theme'
-import { Switch } from '@/components/Switch'
+import { Switch } from '@/components/Inputs/Switch'
 
 // ----------------------------------------------------------------------
 

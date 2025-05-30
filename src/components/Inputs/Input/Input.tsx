@@ -1,9 +1,9 @@
 import '@mantine/core/styles/Input.layer.css'
 import { TextInput } from '@mantine/core'
 import classNames from './Input.module.css'
-import textClassNames from '../../styles/typography.module.css'
+import textClassNames from '../../../styles/typography.module.css'
 import clsx from 'clsx'
-import { CAPTION_L_REGULAR_FONT_VARIANT } from '../../constants/font-variants'
+import { CAPTION_L_REGULAR_FONT_VARIANT } from '../../../constants/font-variants'
 
 // ----------------------------------------------------------------------
 
