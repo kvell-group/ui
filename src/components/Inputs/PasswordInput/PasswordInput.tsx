@@ -1,5 +1,5 @@
 import { PasswordInput as PasswordInputBase } from '@mantine/core'
-import classNames from '../Input.module.css'
+import classNames from '../Input/Input.module.css'
 import sectionClassNames from './PasswordInput.module.css'
 import textClassNames from '../../../styles/typography.module.css'
 import clsx from 'clsx'

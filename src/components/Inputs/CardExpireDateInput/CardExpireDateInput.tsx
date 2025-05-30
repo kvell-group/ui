@@ -18,9 +18,9 @@ export const CardExpireDateInput = forwardRef<HTMLInputElement, MaskedInputProps
       ref={ref}
       autoComplete='cc-exp'
       inputMode='numeric'
+      placeholder='12/25'
       {...props}
       mask={mask}
-      placeholder='____ ____ ____ ____'
       leftSection={<CalendarSVG size={20} />}
     />
   )

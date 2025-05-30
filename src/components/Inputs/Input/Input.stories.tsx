@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import { KvellUiProvider } from '@/components/KvellUiProvider'
 
 import { theme } from '@/components/theme'
-import { Input as InputComponent } from '@/components/Inputs/Input'
+import { Input as InputComponent } from '@/components/Inputs/Input/Input'
 
 // ----------------------------------------------------------------------
 

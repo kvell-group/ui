@@ -20,7 +20,7 @@
   margin-top: 0;
 
   &::before {
-    content: url('../../assets/error.svg');
+    content: url('../../../assets/error.svg');
     position: relative;
     top: 3px;
     left: -0.25rem;
