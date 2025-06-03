@@ -1,5 +1,6 @@
 // components
 export { Button } from './components/Button'
+export { CardLogoByPan } from './components/CardLogoByPan'
 
 // constants
 export { theme } from './components/theme'

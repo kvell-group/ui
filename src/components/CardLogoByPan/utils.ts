@@ -1,11 +1,9 @@
-import { useEffect, useState } from 'react'
-
-import MaestroSVG from '../../../assets/card-logos/maestro.svg'
-import MastercardSVG from '../../../assets/card-logos/mastercard.svg'
-import MirSVG from '../../../assets/card-logos/mir.svg'
-import UnionPaySVG from '../../../assets/card-logos/unionpay.svg'
-import VisaElectronSVG from '../../../assets/card-logos/visa-electron.svg'
-import VisaSVG from '../../../assets/card-logos/visa.svg'
+import MaestroSVG from '../../assets/card-logos/maestro.svg'
+import MastercardSVG from '../../assets/card-logos/mastercard.svg'
+import MirSVG from '../../assets/card-logos/mir.svg'
+import UnionPaySVG from '../../assets/card-logos/unionpay.svg'
+import VisaElectronSVG from '../../assets/card-logos/visa-electron.svg'
+import VisaSVG from '../../assets/card-logos/visa.svg'
 
 // ----------------------------------------------------------------------
 
@@ -66,23 +64,4 @@ const getCardLogo = (cardLabel: CardLabel | null) => {
 
 // ----------------------------------------------------------------------
 
-export const useCardLogo = (cardPan?: string) => {
-  const [cardLabel, setCardLabel] = useState<CardLabel | null>(null)
-  const CardLogo = getCardLogo(cardLabel)
-
-  useEffect(() => {
-    if (!cardPan) {
-      setCardLabel(null)
-    } else {
-      const detectedCardLabel = getCardLabel(cardPan)
-
-      if (detectedCardLabel) {
-        setCardLabel(detectedCardLabel)
-      } else {
-        setCardLabel(null)
-      }
-    }
-  }, [cardPan])
-
-  return CardLogo
-}
+export const getCardLogoByPan = (cardNumber: string) => getCardLogo(getCardLabel(cardNumber))
