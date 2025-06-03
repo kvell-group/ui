@@ -25,7 +25,7 @@ type Story = StoryObj<typeof meta>
 
 export const CardLogoByPan: Story = {
   args: {
-    value: '4111',
+    value: '41111',
   },
 }
 
