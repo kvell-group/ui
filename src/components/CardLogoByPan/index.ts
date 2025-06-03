@@ -1,0 +1,1 @@
+export { CardLogoByPan } from './CardLogoByPan'
