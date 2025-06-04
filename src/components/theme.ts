@@ -5,7 +5,7 @@ import { colorsTuple, MantineThemeOverride } from '@mantine/core'
 export const theme: MantineThemeOverride = {
   focusRing: 'never',
   scale: 1, //default value
-  fontSmoothing: false, //default value
+  fontSmoothing: true, //default value
   // white: 'ffffff',
   black: '#14151a',
   colors: {
