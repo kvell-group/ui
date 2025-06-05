@@ -70,7 +70,7 @@ export const theme: MantineThemeOverride = {
   }, //color by variant */
   autoContrast: false, //default value
   luminanceThreshold: 0.3, //default value
-  fontFamily: 'Inter, sans-serif',
+  fontFamily: 'var(--font-inter), sans-serif',
   /* headings: {
     fontFamily: 'Inter',
     fontWeight: '600',
