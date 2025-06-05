@@ -5,6 +5,7 @@ import '@mantine/core/styles.layer.css'
 import '@mantine/core/styles/baseline.layer.css'
 import '@mantine/core/styles/default-css-variables.layer.css'
 import '@mantine/core/styles/global.layer.css'
+import './KvellUiProvider.module.css'
 
 // ----------------------------------------------------------------------
 
