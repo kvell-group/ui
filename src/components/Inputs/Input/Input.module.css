@@ -9,6 +9,7 @@
   &[data-error] {
     border: 1px solid var(--mantine-color-border-action-destructive-0);
     margin-bottom: -0.125px;
+    color: var(--mantine-color-text-status-destructive-0);
   }
 
   [data-position='left'] ~ & {

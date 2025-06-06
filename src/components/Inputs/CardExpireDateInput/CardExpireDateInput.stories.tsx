@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 
 import { KvellUiProvider } from '@/components/KvellUiProvider'
 
-import { theme } from '@/components/theme'
+import { theme } from '@/theme'
 import { CardExpireDateInput as CardExpireDateInputComponent } from '@/components/Inputs/CardExpireDateInput'
 
 // ----------------------------------------------------------------------

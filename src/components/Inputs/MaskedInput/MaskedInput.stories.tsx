@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 
 import { KvellUiProvider } from '@/components/KvellUiProvider'
 
-import { theme } from '@/components/theme'
+import { theme } from '@/theme'
 import { MaskedInput as MaskedInputComponent } from '@/components/Inputs/MaskedInput'
 
 import { PHONE_MASK } from '@/constants/masks'
