@@ -4,7 +4,7 @@ import { KvellUiProvider } from '@/components/KvellUiProvider'
 
 import { RiArrowLeftLine as ArrowLeftSVG, RiLockLine as LockSVG } from '@remixicon/react'
 
-import { theme } from '@/components/theme'
+import { theme } from '@/theme'
 import { Button } from '@/components/Button'
 import { Text } from '@/components/Text/Text'
 import {

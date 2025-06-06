@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { theme } from '@/components/theme'
+import { theme } from '@/theme'
 import { Checkbox as CheckboxComponent } from '@/components/Inputs/Checkbox'
 import { Text } from '@/components/Text'
 import { Anchor } from '@mantine/core'

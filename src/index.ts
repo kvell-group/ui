@@ -1,9 +1,5 @@
-// components
-export { Button } from './components/Button'
-export { CardLogoByPan } from './components/CardLogoByPan'
-
 // constants
-export { theme } from './components/theme'
+export { theme } from './theme'
 
 //inputs
 export { Input } from './components/Inputs/Input'
@@ -14,14 +10,17 @@ export { CvvInput } from './components/Inputs/CvvInput'
 export { Checkbox } from './components/Inputs/Checkbox'
 export { Switch } from './components/Inputs/Switch'
 
+//providers
+export { KvellUiProvider } from './components/KvellUiProvider'
+
+//components
+export { Button } from './components/Button'
+export { CardLogoByPan } from './components/CardLogoByPan'
 export { Loader } from './components/Loader'
 export { Modal } from './components/Modal'
 export { Text } from './components/Text'
 
-//providers
-export { KvellUiProvider } from './components/KvellUiProvider'
+// core-components ------------------------------------------------------
 
-//core-components
-// ----------------------------------------------------------------------
 //Miscellaneous
-export { Divider } from './core-components/Divider'
+export { Divider } from './components/@core/Divider'
