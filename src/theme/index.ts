@@ -1,4 +1,4 @@
-import { colorsTuple, MantineThemeOverride } from '@mantine/core'
+import { colorsTuple, type MantineThemeOverride } from '@mantine/core'
 
 // ----------------------------------------------------------------------
 
@@ -70,9 +70,9 @@ export const theme: MantineThemeOverride = {
   }, //color by variant */
   autoContrast: false, //default value
   luminanceThreshold: 0.3, //default value
-  fontFamily: 'Inter, Arial, Helvetica, sans-serif',
+  fontFamily: 'Onest, Arial, Helvetica, sans-serif',
   /* headings: {
-    fontFamily: 'Inter',
+    fontFamily: 'Onest',
     fontWeight: '600',
     textWrap: 'wrap', // 'nowrap', 'balance', 'pretty', 'stable',
     sizes: {

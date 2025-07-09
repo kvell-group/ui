@@ -4,7 +4,7 @@ import '@mantine/core/styles/UnstyledButton.layer.css'
 import '@mantine/core/styles/Button.layer.css'
 import classNames from './Button.module.css'
 import { forwardRef } from 'react'
-import { ExtendedButtonVariant } from './types'
+import type { ExtendedButtonVariant } from './types'
 
 // ----------------------------------------------------------------------
 
