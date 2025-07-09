@@ -1,5 +1,5 @@
 import { ButtonVariants } from './constants'
-import { ButtonVariant } from '@mantine/core'
+import type { ButtonVariant } from '@mantine/core'
 
 // ----------------------------------------------------------------------
 

@@ -1,4 +1,4 @@
-import { colorsTuple, MantineThemeOverride } from '@mantine/core'
+import { colorsTuple, type MantineThemeOverride } from '@mantine/core'
 
 // ----------------------------------------------------------------------
 
