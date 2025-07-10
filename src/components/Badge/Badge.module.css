@@ -1,0 +1,23 @@
+.root {
+  --badge-height-lg: rem(28px);
+  --badge-padding-x-lg: rem(6px);
+  --badge-fz-lg: var(--mantine-font-size-caption-l);
+
+  font-family: var(--mantine-font-family);
+  text-transform: none;
+  font-weight: 500;
+}
+
+.section {
+  margin-inline: 0;
+}
+
+.label {
+  margin-bottom: rem(-1px);
+}
+
+.root[data-size='lg'] > .label {
+  padding-inline: rem(4px);
+  letter-spacing: var(--mantine-spacing-caption-l);
+  line-height: var(--mantine-line-height-caption-l);
+}
