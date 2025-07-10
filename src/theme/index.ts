@@ -82,15 +82,17 @@ export const theme: MantineThemeOverride = {
   }, */
   radius: {
     // same name from blank and mantine
-    xl: '0.75rem',
     xs: '0.25rem',
     sm: '0.375rem',
     md: '0.5rem',
     lg: '0.625rem',
+    xl: '0.75rem',
+    xxl: '1rem',
   },
   defaultRadius: 'xl',
   spacing: {
     //blank variables
+    h5: '-0.5px',
     h6: '-0.30000001192092896px',
     'body-m': '-0.20000000298023224px',
     'body-s': '-0.20000000298023224px',
@@ -106,6 +108,7 @@ export const theme: MantineThemeOverride = {
   }, //for example
   fontSizes: {
     //blank variables
+    h5: '30px',
     h6: '24px',
     'body-m': '18px',
     'body-l': '20px',
@@ -121,6 +124,7 @@ export const theme: MantineThemeOverride = {
   }, //for example
   lineHeights: {
     //blank variables
+    h5: '36px',
     h6: '32px',
     'body-m': '26px',
     'body-s': '24px',
