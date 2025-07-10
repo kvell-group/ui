@@ -20,6 +20,7 @@ export { Loader } from './components/Loader'
 export { Modal } from './components/Modal'
 export { Text } from './components/Text'
 export { Badge } from './components/Badge'
+export { Carousel } from './components/Carousel'
 
 // core-components ------------------------------------------------------
 
