@@ -38,6 +38,20 @@
     }
   }
 
+  &[data-variant='ghost'] {
+    background-color: transparent;
+    color: var(--mantine-color-text-base-secondary-0);
+    box-shadow: none;
+
+    &:hover {
+      background-color: var(--mantine-color-background-button-ghost-hover-0);
+    }
+
+    .loader {
+      --button-color: var(--mantine-color-gray-5);
+    }
+  }
+
   &:disabled,
   &[data-disabled] {
     background-color: var(--mantine-color-background-button-primary-disabled-0);

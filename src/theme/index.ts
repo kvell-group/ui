@@ -26,10 +26,12 @@ export const theme: MantineThemeOverride = {
     //buttons
     'background-button-tertiary': colorsTuple('#0a0f290a'),
     'background-button-primary-disabled': colorsTuple('#e9eaec'),
+    'background-button-ghost-hover': colorsTuple('#0A0F290A'),
 
     //icons
     'icon-base-secondary': colorsTuple('#0f132499'),
     'icon-base-tertiary': colorsTuple('#0D112666'),
+    'icon-base-quaternary': colorsTuple('#0A0F2940'),
     'icon-status-success': colorsTuple('#26BD6C'),
     // icon/base/secondary
 
