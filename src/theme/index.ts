@@ -33,7 +33,6 @@ export const theme: MantineThemeOverride = {
     'text-base-primary': colorsTuple('#14151a'),
     'text-base-secondary': colorsTuple('#0f132499'),
     'text-base-tertiary': colorsTuple('#0d112666'),
-    'text-status-destructive': colorsTuple('#e6483d'),
     'text-accent-blue-accent': colorsTuple('#4778F5'),
 
     //toggle

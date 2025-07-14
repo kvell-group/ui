@@ -10,6 +10,7 @@ export { CvvInput } from './components/Inputs/CvvInput'
 export { Checkbox } from './components/Inputs/Checkbox'
 export { Switch } from './components/Inputs/Switch'
 export { Select } from './components/Inputs/Select'
+export { Textarea } from './components/Inputs/Textarea'
 
 //providers
 export { KvellUiProvider } from './components/KvellUiProvider'
