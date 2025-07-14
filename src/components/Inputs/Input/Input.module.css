@@ -23,7 +23,7 @@
   }
 
   &:hover {
-    border-color: var(--mantine-color-border-action-hover-0);
+    border-color: var(--color-border-action-hover);
   }
 
   &:focus {

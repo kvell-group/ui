@@ -42,3 +42,17 @@
     U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
     U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+:root {
+  --color-background-button-primary: #14151a;
+  --color-background-button-primary-hover: #1f2228;
+  --color-background-button-primary-disabled: #e9eaec;
+  --color-background-button-secondary-hover: #f7f7f8;
+  --color-background-button-secondary-disabled: #fff;
+  --color-background-button-tertiary: #0a0f290a;
+  --color-background-button-tertiary-hover: #0a0f2914;
+  --color-background-button-ghost-hover: #0a0f290a;
+  --color-border-action-hover: #c8cad0;
+  --color-border-action-disabled: #e9eaec;
+  --color-text-base-quaternary: #0a0f2940;
+}

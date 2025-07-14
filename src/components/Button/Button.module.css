@@ -1,5 +1,4 @@
 .root {
-  box-shadow: var(--mantine-shadow-xs);
   --button-height-sm: 2rem;
   --button-height-md: 2.5rem;
   --button-height-lg: 3rem;
@@ -17,12 +16,34 @@
   &[data-variant='primary'] {
     background-color: var(--mantine-color-primary-0);
     color: var(--mantine-color-white);
+    box-shadow: var(--mantine-shadow-xs);
+
+    &:hover {
+      background-color: var(--color-background-button-primary-hover);
+    }
+
+    &:disabled,
+    &[data-disabled] {
+      background-color: var(--color-background-button-primary-disabled);
+    }
   }
 
   &[data-variant='secondary'] {
     background-color: var(--mantine-color-secondary-0);
     color: var(--mantine-color-primary);
     border: 1px solid var(--mantine-color-border-action-normal-0);
+    box-shadow: var(--mantine-shadow-xs);
+
+    &:hover {
+      background-color: var(--color-background-button-secondary-hover);
+      border: 1px solid var(--color-border-action-hover);
+    }
+
+    &:disabled,
+    &[data-disabled] {
+      background-color: var(--color-background-button-secondary-disabled);
+      border: 1px solid var(--color-border-action-disabled);
+    }
 
     .loader {
       --button-color: var(--mantine-color-gray-5);
@@ -30,8 +51,17 @@
   }
 
   &[data-variant='tertiary'] {
-    background-color: var(--mantine-color-tertiary-0);
+    background-color: var(--color-background-button-tertiary);
     color: var(--mantine-color-primary);
+
+    &:hover {
+      background-color: var(--color-background-button-tertiary-hover);
+    }
+
+    &:disabled,
+    &[data-disabled] {
+      background-color: var(--color-background-button-tertiary);
+    }
 
     .loader {
       --button-color: var(--mantine-color-gray-5);
@@ -44,7 +74,12 @@
     box-shadow: none;
 
     &:hover {
-      background-color: var(--mantine-color-background-button-ghost-hover-0);
+      background-color: var(--color-background-button-ghost-hover);
+    }
+
+    &:disabled,
+    &[data-disabled] {
+      background-color: transparent;
     }
 
     .loader {
@@ -54,8 +89,7 @@
 
   &:disabled,
   &[data-disabled] {
-    background-color: var(--mantine-color-background-button-primary-disabled-0);
-    color: var(--mantine-color-text-base-quaternary-0);
+    color: var(--color-text-base-quaternary);
   }
 }
 

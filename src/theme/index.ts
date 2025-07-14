@@ -19,14 +19,8 @@ export const theme: MantineThemeOverride = {
     //borders
     'border-action-normal': colorsTuple('#dee0e3'),
     'border-action-destructive': colorsTuple('#f7c3c0'),
-    'border-action-hover': colorsTuple('#C8CAD0'),
     'border-base-alpha': colorsTuple('#0a0f2914'),
     'border-base-surface': colorsTuple('#ffffff'),
-
-    //buttons
-    'background-button-tertiary': colorsTuple('#0a0f290a'),
-    'background-button-primary-disabled': colorsTuple('#e9eaec'),
-    'background-button-ghost-hover': colorsTuple('#0A0F290A'),
 
     //icons
     'icon-base-secondary': colorsTuple('#0f132499'),
@@ -39,7 +33,6 @@ export const theme: MantineThemeOverride = {
     'text-base-primary': colorsTuple('#14151a'),
     'text-base-secondary': colorsTuple('#0f132499'),
     'text-base-tertiary': colorsTuple('#0d112666'),
-    'text-base-quaternary': colorsTuple('#0a0f2940'),
     'text-status-destructive': colorsTuple('#e6483d'),
     'text-accent-blue-accent': colorsTuple('#4778F5'),
 
