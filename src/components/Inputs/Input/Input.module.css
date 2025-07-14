@@ -1,3 +1,9 @@
+.root {
+  display: flex;
+  flex-flow: column;
+  gap: rem(8px);
+}
+
 .input {
   border-radius: var(--mantine-radius-xl);
   border: 1px solid var(--mantine-color-border-action-normal-0);
@@ -15,15 +21,23 @@
   [data-position='left'] ~ & {
     --input-padding-inline-start: 2.5rem;
   }
+
+  &:hover {
+    border-color: var(--mantine-color-border-action-hover-0);
+  }
+
+  &:focus {
+    border-color: var(--mantine-color-text-base-primary-0);
+  }
+}
+
+.wrapper {
+  margin-bottom: 0;
 }
 
 .section {
   --right-section-end: 0.75rem;
   --left-section-start: 0.25rem;
-}
-
-.label {
-  margin-bottom: 0.2rem;
 }
 
 .error {

@@ -9,6 +9,7 @@ export { PasswordInput } from './components/Inputs/PasswordInput'
 export { CvvInput } from './components/Inputs/CvvInput'
 export { Checkbox } from './components/Inputs/Checkbox'
 export { Switch } from './components/Inputs/Switch'
+export { Select } from './components/Inputs/Select'
 
 //providers
 export { KvellUiProvider } from './components/KvellUiProvider'
