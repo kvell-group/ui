@@ -20,7 +20,7 @@
     border-color: var(--color-border-action-hover);
   }
 
-  &:focus {
+  &:focus-within {
     border-color: var(--mantine-color-text-base-primary-0);
   }
 
@@ -32,7 +32,7 @@
       border-color: var(--color-border-action-destructive-hover);
     }
 
-    &:focus {
+    &:focus-within {
       border-color: var(--color-border-action-focus-destructive-light);
     }
   }

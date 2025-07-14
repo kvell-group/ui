@@ -1,8 +1,6 @@
 @font-face {
-  font-family: 'Password';
-  src:
-    local('Password'),
-    url(../../../assets/fonts/password.woff2) format('woff2');
+  font-family: Password;
+  src: url(../../../assets/fonts/password.woff2) format('woff2');
   font-weight: 100;
 }
 
