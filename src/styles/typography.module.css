@@ -6,6 +6,14 @@
   letter-spacing: var(--mantine-spacing-h5);
 }
 
+.h5-semibold {
+  font-family: var(--mantine-font-family);
+  font-weight: 600;
+  font-size: var(--mantine-font-size-h5);
+  line-height: var(--mantine-line-height-h5);
+  letter-spacing: var(--mantine-spacing-h5);
+}
+
 /* heading */
 .h6-bold {
   font-family: var(--mantine-font-family);
