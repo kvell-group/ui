@@ -47,18 +47,25 @@
   --color-background-button-primary: #14151a;
   --color-background-button-primary-hover: #1f2228;
   --color-background-button-primary-disabled: #e9eaec;
+  --color-background-button-secondary: #ffffff;
   --color-background-button-secondary-hover: #f7f7f8;
   --color-background-button-secondary-disabled: #fff;
   --color-background-button-tertiary: #0a0f290a;
   --color-background-button-tertiary-hover: #0a0f2914;
   --color-background-button-ghost-hover: #0a0f290a;
+  --color-border-action-normal: #dee0e3;
   --color-border-action-hover: #c8cad0;
   --color-border-action-disabled: #e9eaec;
+  --color-border-action-focus-light: #b78af0;
   --color-border-action-destructive: #f7c3c0;
   --color-border-action-destructive-hover: #f5b2ad;
   --color-border-action-focus-destructive-light: #f08b85;
   --color-text-base-tertiary: #0d112666;
   --color-text-base-quaternary: #0a0f2940;
   --color-text-status-destructive: #e6483d;
+  --color-icon-base-secondary: #0f132499;
   --color-icon-base-tertiary: #0d112666;
+  --color-icon-base-quaternary: #0a0f2940;
+  --color-icon-base-inverted: #ffffff;
+  --shadow-focus-ring-light: 0px 0px 0px 2px #c8b2ff80;
 }

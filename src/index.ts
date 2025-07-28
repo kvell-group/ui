@@ -24,6 +24,7 @@ export { Text } from './components/Text'
 export { Badge } from './components/Badge'
 export { Carousel } from './components/Carousel'
 export { Card } from './components/Card'
+export { ActionIcon } from './components/ActionIcon'
 
 // core-components ------------------------------------------------------
 
