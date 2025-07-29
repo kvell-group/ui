@@ -4,6 +4,7 @@ export const H5_SEMIBOLD_FONT_VARIANT = 'h5-semibold' as const
 export const H6_BOLD_FONT_VARIANT = 'h6-bold' as const
 
 //body
+export const BODY_M_REGULAR_FONT_VARIANT = 'body-m-regular' as const
 export const BODY_M_MEDIUM_FONT_VARIANT = 'body-m-medium' as const
 export const BODY_M_BOLD_FONT_VARIANT = 'body-m-bold' as const
 export const BODY_L_BOLD_FONT_VARIANT = 'body-l-bold' as const
@@ -25,6 +26,7 @@ export const FontVariants = [
   H6_BOLD_FONT_VARIANT,
   //body
   BODY_L_BOLD_FONT_VARIANT,
+  BODY_M_REGULAR_FONT_VARIANT,
   BODY_M_MEDIUM_FONT_VARIANT,
   BODY_M_BOLD_FONT_VARIANT,
   BODY_S_MEDIUM_FONT_VARIANT,

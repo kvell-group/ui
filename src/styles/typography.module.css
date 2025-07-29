@@ -32,6 +32,14 @@
   letter-spacing: var(--mantine-spacing-body-l);
 }
 
+.body-m-regular {
+  font-family: var(--mantine-font-family);
+  font-weight: 400;
+  font-size: var(--mantine-font-size-body-m);
+  line-height: var(--mantine-line-height-body-m);
+  letter-spacing: var(--mantine-spacing-body-m);
+}
+
 .body-m-bold {
   font-family: var(--mantine-font-family);
   font-weight: 700;
