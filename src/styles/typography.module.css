@@ -24,6 +24,14 @@
 }
 
 /* body */
+.body-l-medium {
+  font-family: var(--mantine-font-family);
+  font-weight: 500;
+  font-size: var(--mantine-font-size-body-l);
+  line-height: var(--mantine-line-height-body-l);
+  letter-spacing: var(--mantine-spacing-body-l);
+}
+
 .body-l-bold {
   font-family: var(--mantine-font-family);
   font-weight: 700;

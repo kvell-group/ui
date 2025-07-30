@@ -8,7 +8,7 @@ import type { ExtendedActionIconVariant } from './types'
 
 // ----------------------------------------------------------------------
 
-type ActionIconProps = BaseActionIconProps & { variant?: ExtendedActionIconVariant }
+export type ActionIconProps = BaseActionIconProps & { variant?: ExtendedActionIconVariant }
 
 export const ActionIcon = createPolymorphicComponent<'button', ActionIconProps>(
   forwardRef<HTMLButtonElement, ActionIconProps>((props, ref) => {

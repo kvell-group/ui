@@ -18,6 +18,10 @@
     color: var(--mantine-color-white);
     box-shadow: var(--mantine-shadow-xs);
 
+    &:focus-visible {
+      border: none;
+    }
+
     &:hover {
       background-color: var(--color-background-button-primary-hover);
     }
@@ -90,6 +94,11 @@
   &:disabled,
   &[data-disabled] {
     color: var(--color-text-base-quaternary);
+  }
+
+  &:focus-visible {
+    border: rem(1px) solid var(--color-border-action-focus-light);
+    box-shadow: var(--shadow-focus-ring-light);
   }
 }
 

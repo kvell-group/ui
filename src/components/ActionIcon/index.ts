@@ -1,1 +1,1 @@
-export { ActionIcon } from './ActionIcon'
+export * from './ActionIcon'

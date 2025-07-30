@@ -16,7 +16,7 @@ export { Textarea } from './components/Inputs/Textarea'
 export { KvellUiProvider } from './components/KvellUiProvider'
 
 //components
-export { Button } from './components/Button'
+export * from './components/Button'
 export { CardLogoByPan } from './components/CardLogoByPan'
 export { Loader } from './components/Loader'
 export { Modal } from './components/Modal'
@@ -24,7 +24,7 @@ export { Text } from './components/Text'
 export { Badge } from './components/Badge'
 export { Carousel } from './components/Carousel'
 export { Card } from './components/Card'
-export { ActionIcon } from './components/ActionIcon'
+export * from './components/ActionIcon'
 
 // core-components ------------------------------------------------------
 

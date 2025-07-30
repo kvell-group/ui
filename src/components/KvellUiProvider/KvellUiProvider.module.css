@@ -44,6 +44,9 @@
 }
 
 :root {
+  --color-background-accent-gray-accent: #717684;
+  --color-background-accent-gray-subtle: #e9eaec;
+  --color-background-accent-green-accent: #26bd6c;
   --color-background-button-primary: #14151a;
   --color-background-button-primary-hover: #1f2228;
   --color-background-button-primary-disabled: #e9eaec;

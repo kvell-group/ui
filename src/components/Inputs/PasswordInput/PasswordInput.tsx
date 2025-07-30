@@ -10,4 +10,5 @@ export const PasswordInput = PasswordInputBase.withProps({
     section: sectionClassNames.section,
   },
   autoComplete: 'current-password',
+  inputWrapperOrder: ['label', 'input', 'error', 'description'],
 })
