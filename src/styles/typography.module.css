@@ -6,6 +6,14 @@
   letter-spacing: var(--mantine-spacing-h5);
 }
 
+.h5-semibold {
+  font-family: var(--mantine-font-family);
+  font-weight: 600;
+  font-size: var(--mantine-font-size-h5);
+  line-height: var(--mantine-line-height-h5);
+  letter-spacing: var(--mantine-spacing-h5);
+}
+
 /* heading */
 .h6-bold {
   font-family: var(--mantine-font-family);
@@ -16,12 +24,28 @@
 }
 
 /* body */
+.body-l-medium {
+  font-family: var(--mantine-font-family);
+  font-weight: 500;
+  font-size: var(--mantine-font-size-body-l);
+  line-height: var(--mantine-line-height-body-l);
+  letter-spacing: var(--mantine-spacing-body-l);
+}
+
 .body-l-bold {
   font-family: var(--mantine-font-family);
   font-weight: 700;
   font-size: var(--mantine-font-size-body-l);
   line-height: var(--mantine-line-height-body-l);
   letter-spacing: var(--mantine-spacing-body-l);
+}
+
+.body-m-regular {
+  font-family: var(--mantine-font-family);
+  font-weight: 400;
+  font-size: var(--mantine-font-size-body-m);
+  line-height: var(--mantine-line-height-body-m);
+  letter-spacing: var(--mantine-spacing-body-m);
 }
 
 .body-m-bold {

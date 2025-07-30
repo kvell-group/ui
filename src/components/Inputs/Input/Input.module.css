@@ -1,20 +1,45 @@
+.root {
+  display: flex;
+  flex-flow: column;
+  gap: rem(8px);
+}
+
 .input {
+  --input-height: 2.5rem;
+
   border-radius: var(--mantine-radius-xl);
   border: 1px solid var(--mantine-color-border-action-normal-0);
   box-shadow: var(--mantine-shadow-xs);
   color: var(--mantine-color-text-base-primary-0);
 
-  --input-height: 2.5rem;
-
-  &[data-error] {
-    border: 1px solid var(--mantine-color-border-action-destructive-0);
-    margin-bottom: -0.125px;
-    color: var(--mantine-color-text-status-destructive-0);
-  }
-
   [data-position='left'] ~ & {
     --input-padding-inline-start: 2.5rem;
   }
+
+  &:hover {
+    border-color: var(--color-border-action-hover);
+  }
+
+  &:focus-within {
+    border-color: var(--mantine-color-text-base-primary-0);
+  }
+
+  &[data-error] {
+    border: 1px solid var(--color-border-action-destructive);
+    color: var(--color-text-status-destructive);
+
+    &:hover {
+      border-color: var(--color-border-action-destructive-hover);
+    }
+
+    &:focus-within {
+      border-color: var(--color-border-action-focus-destructive-light);
+    }
+  }
+}
+
+.wrapper {
+  margin-bottom: 0;
 }
 
 .section {
@@ -22,18 +47,29 @@
   --left-section-start: 0.25rem;
 }
 
-.label {
-  margin-bottom: 0.2rem;
+.description,
+.error {
+  padding-block: rem(2px);
+  font-size: var(--mantine-font-size-caption-l);
+  line-height: var(--mantine-line-height-caption-l);
+  letter-spacing: var(--mantine-spacing-caption-l);
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: rem(16px);
+    height: rem(16px);
+    background: currentColor;
+    mask: url('../../../assets/error.svg');
+    margin-right: rem(4px);
+    vertical-align: sub;
+  }
+}
+
+.description {
+  color: var(--color-text-base-tertiary);
 }
 
 .error {
-  color: var(--mantine-color-text-status-destructive-0);
-  padding-left: 0.25rem;
-
-  &::before {
-    content: url('../../../assets/error.svg');
-    position: relative;
-    top: 3px;
-    left: -0.25rem;
-  }
+  color: var(--color-text-status-destructive);
 }

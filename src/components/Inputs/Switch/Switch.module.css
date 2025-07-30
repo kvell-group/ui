@@ -15,7 +15,7 @@
 }
 
 .error {
-  color: var(--mantine-color-text-status-destructive-0);
+  color: var(--color-text-status-destructive);
   padding-left: 0.25rem;
   margin-top: 0;
 

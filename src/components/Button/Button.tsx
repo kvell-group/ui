@@ -8,7 +8,7 @@ import type { ExtendedButtonVariant } from './types'
 
 // ----------------------------------------------------------------------
 
-type ButtonProps = BaseButtonProps & { variant?: ExtendedButtonVariant }
+export type ButtonProps = BaseButtonProps & { variant?: ExtendedButtonVariant }
 
 export const Button = createPolymorphicComponent<'button', ButtonProps>(
   forwardRef<HTMLButtonElement, ButtonProps>((props, ref) => {
