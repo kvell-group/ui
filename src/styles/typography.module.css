@@ -1,3 +1,4 @@
+/* heading */
 .h5-medium {
   font-family: var(--mantine-font-family);
   font-weight: 500;
@@ -14,7 +15,14 @@
   letter-spacing: var(--mantine-spacing-h5);
 }
 
-/* heading */
+.h6-medium {
+  font-family: var(--mantine-font-family);
+  font-weight: 500;
+  font-size: var(--mantine-font-size-h6);
+  line-height: var(--mantine-line-height-h6);
+  letter-spacing: var(--mantine-spacing-h6);
+}
+
 .h6-bold {
   font-family: var(--mantine-font-family);
   font-weight: 700;
