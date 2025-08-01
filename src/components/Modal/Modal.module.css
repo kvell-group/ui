@@ -1,43 +1,48 @@
 .root {
-  box-shadow: var(--mantine-shadows-lg);
-  width: 100%;
+  --mb-shadow: var(--mantine-shadows-lg);
+  --mb-padding: rem(20px);
+}
+
+@media (max-width: $mantine-breakpoint-xs) {
+  .inner {
+    align-items: end;
+    padding: 0;
+  }
 }
 
 .content {
-  border-radius: var(--mantine-radius-xl);
-  border: 1px solid var(--mantine-color-border-action-normal-0);
-  white-space: pre-wrap;
-  padding: 0.5rem;
+  border: rem(1px) solid var(--color-border-base-alpha);
+  border-radius: var(--mantine-radius-xxl);
 
   @media (max-width: $mantine-breakpoint-xs) {
-    width: 100%;
-    border-radius: var(--mantine-radius-xl) var(--mantine-radius-xl) 0 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
-.header {
-  padding-bottom: 0.25rem;
+.body {
+  padding-bottom: rem(32px);
 }
 
-.inner {
-  @media (max-width: $mantine-breakpoint-xs) {
-    align-items: end;
-    padding: 0;
-    width: 100%;
-  }
+.title {
+  font-weight: 600;
+  font-size: var(--mantine-font-size-body-s);
+  line-height: var(--mantine-line-height-body-s);
+  letter-spacing: var(--mantine-spacing-body-s);
 }
 
-button.close {
-  position: absolute;
-  right: 0.25rem;
-  top: 0.4rem;
-  display: flex;
+.close {
+  --cb-size: rem(24px);
+  margin-top: rem(-4px);
+  margin-right: rem(1px);
   background-color: var(--color-background-button-tertiary);
-  border-radius: 50%;
-  --cb-size: 1.5rem;
 
-  & > svg {
-    color: var(--mantine-color-icon-base-secondary-0);
+  &:hover {
+    background-color: var(--color-background-button-tertiary-hover);
+  }
+
+  svg {
+    color: var(--color-icon-base-secondary);
     scale: 0.75;
   }
 }
