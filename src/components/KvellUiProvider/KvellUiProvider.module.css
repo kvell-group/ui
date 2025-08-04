@@ -76,4 +76,5 @@
   --color-icon-status-success: #26bd6c;
   --color-icon-status-warning: #f48e2f;
   --shadow-focus-ring-light: 0px 0px 0px 2px #c8b2ff80;
+  --shadow-focus-ring-light-destructive: 0px 0px 0px 2px #ffb2b299;
 }
