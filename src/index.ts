@@ -11,6 +11,7 @@ export { Checkbox } from './components/Inputs/Checkbox'
 export { Switch } from './components/Inputs/Switch'
 export { Select } from './components/Inputs/Select'
 export { Textarea } from './components/Inputs/Textarea'
+export * from './components/Inputs/DatePickerInput'
 
 //providers
 export { KvellUiProvider } from './components/KvellUiProvider'

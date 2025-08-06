@@ -1,4 +1,5 @@
 .root {
+  --input-section-color: var(--color-icon-base-tertiary);
   display: flex;
   flex-flow: column;
   gap: rem(8px);
