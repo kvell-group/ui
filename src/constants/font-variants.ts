@@ -1,6 +1,7 @@
 //heading
 export const H5_MEDIUM_FONT_VARIANT = 'h5-medium' as const
 export const H5_SEMIBOLD_FONT_VARIANT = 'h5-semibold' as const
+export const H5_BOLD_FONT_VARIANT = 'h5-bold' as const
 export const H6_BOLD_FONT_VARIANT = 'h6-bold' as const
 
 //body
@@ -24,6 +25,7 @@ export const FontVariants = [
   //heading
   H5_MEDIUM_FONT_VARIANT,
   H5_SEMIBOLD_FONT_VARIANT,
+  H5_BOLD_FONT_VARIANT,
   H6_BOLD_FONT_VARIANT,
   //body
   BODY_L_MEDIUM_FONT_VARIANT,

@@ -1,5 +1,4 @@
 .root {
-  --input-section-color: var(--color-icon-base-tertiary);
   display: flex;
   flex-flow: column;
   gap: rem(8px);
@@ -7,37 +6,49 @@
 
 .input {
   --input-height: 2.5rem;
+  --input-color: var(--color-text-base-primary);
+  --input-disabled-bg: var(--color-background-input-disabled);
+  --input-disabled-color: var(--color-text-base-quaternary);
+  --input-radius: var(--mantine-radius-xl);
+  --input-bd: var(--color-border-action-normal);
 
-  border-radius: var(--mantine-radius-xl);
-  border: rem(1px) solid var(--color-border-action-normal);
   box-shadow: var(--mantine-shadow-xs);
-  color: var(--mantine-color-text-base-primary-0);
 
   [data-position='left'] ~ & {
     --input-padding-inline-start: 2.5rem;
   }
 
-  &:hover {
-    border-color: var(--color-border-action-hover);
+  @media (hover: hover) {
+    &:hover:where(:not([data-loading], :disabled, [data-disabled])) {
+      --input-bd: var(--color-border-action-hover);
+    }
   }
 
   &:focus-within {
-    border-color: var(--color-border-action-focus-light);
+    --input-bd: var(--color-border-action-focus-light);
     box-shadow: var(--shadow-focus-ring-light);
   }
 
   &[data-error] {
-    border-color: var(--color-border-action-destructive);
-    color: var(--color-text-status-destructive);
+    --input-color: var(--color-text-status-destructive);
+    --input-bd: var(--color-border-action-destructive);
 
-    &:hover {
-      border-color: var(--color-border-action-destructive-hover);
+    @media (hover: hover) {
+      &:hover:where(:not([data-loading], :disabled, [data-disabled])) {
+        --input-bd: var(--color-border-action-destructive-hover);
+      }
     }
 
     &:focus-within {
-      border-color: var(--color-border-action-focus-destructive-light);
+      --input-bd: var(--color-border-action-focus-destructive-light);
       box-shadow: var(--shadow-focus-ring-light-destructive);
     }
+  }
+
+  &:disabled,
+  [data-disabled] {
+    --input-bd: var(--color-border-action-disabled);
+    box-shadow: none;
   }
 }
 
@@ -46,8 +57,13 @@
 }
 
 .section {
+  --input-section-color: var(--color-icon-base-tertiary);
   --right-section-end: 0.75rem;
   --left-section-start: 0.25rem;
+
+  .wrapper[data-disabled] & {
+    --input-section-color: var(--color-icon-base-quaternary);
+  }
 }
 
 .description,
