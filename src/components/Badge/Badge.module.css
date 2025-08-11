@@ -1,11 +1,42 @@
 .root {
+  --badge-height-xs: rem(16px);
+  --badge-height-sm: rem(20px);
+  --badge-height-md: rem(24px);
   --badge-height-lg: rem(28px);
-  --badge-padding-x-lg: rem(6px);
+  --badge-fz-xs: var(--mantine-font-size-caption-m);
+  --badge-fz-sm: var(--mantine-font-size-caption-m);
+  --badge-fz-md: var(--mantine-font-size-caption-l);
   --badge-fz-lg: var(--mantine-font-size-caption-l);
+  --badge-padding-x-xs: rem(2px);
+  --badge-padding-x-sm: rem(3px);
+  --badge-padding-x-md: rem(4px);
+  --badge-padding-x-lg: rem(6px);
 
-  font-family: var(--mantine-font-family);
   text-transform: none;
   font-weight: 500;
+  letter-spacing: var(--badge-ls);
+
+  &[data-size='xs'] {
+    --badge-radius: var(--mantine-radius-xs);
+    --badge-label-padding-x: rem(2px);
+    --badge-lh: var(--mantine-line-height-caption-m);
+    --badge-ls: var(--mantine-spacing-caption-m);
+  }
+
+  &[data-size='sm'] {
+    --badge-radius: var(--mantine-radius-sm);
+    --badge-label-padding-x: rem(3px);
+    --badge-lh: var(--mantine-line-height-caption-m);
+    --badge-ls: var(--mantine-spacing-caption-m);
+  }
+
+  &[data-size='md'],
+  &[data-size='lg'] {
+    --badge-radius: var(--mantine-radius-md);
+    --badge-label-padding-x: rem(4px);
+    --badge-lh: var(--mantine-line-height-caption-l);
+    --badge-ls: var(--mantine-spacing-caption-l);
+  }
 }
 
 .section {
@@ -14,10 +45,5 @@
 
 .label {
   margin-bottom: rem(-1px);
-}
-
-.root[data-size='lg'] > .label {
-  padding-inline: rem(4px);
-  letter-spacing: var(--mantine-spacing-caption-l);
-  line-height: var(--mantine-line-height-caption-l);
+  padding-inline: var(--badge-label-padding-x);
 }

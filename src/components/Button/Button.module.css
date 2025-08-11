@@ -1,107 +1,150 @@
 .root {
-  --button-height-sm: 2rem;
-  --button-height-md: 2.5rem;
-  --button-height-lg: 3rem;
+  --button-height-xs: rem(24px);
+  --button-height-sm: rem(32px);
+  --button-height-md: rem(40px);
+  --button-height-lg: rem(48px);
 
-  --button-padding-x-sm: 1rem;
-  --button-padding-x-md: 1rem;
-  --button-padding-x-lg: 1rem;
+  --button-padding-x-xs: rem(8px);
+  --button-padding-x-sm: rem(10px);
+  --button-padding-x-md: rem(12px);
+  --button-padding-x-lg: rem(16px);
 
-  font-family: var(--mantine-font-family);
   font-weight: 500;
-  font-size: var(--mantine-font-size-caption-l);
-  line-height: var(--mantine-line-height-caption-l);
-  letter-spacing: var(--mantine-spacing-caption-l);
+  border: rem(1px) solid transparent;
+
+  &[data-size='xs'] {
+    --button-radius: var(--mantine-radius-md);
+    font-size: var(--mantine-font-size-caption-m);
+    line-height: var(--mantine-line-height-caption-m);
+    letter-spacing: var(--mantine-spacing-caption-m);
+  }
+
+  &[data-size='sm'] {
+    --button-radius: var(--mantine-radius-lg);
+    font-size: var(--mantine-font-size-caption-l);
+    line-height: var(--mantine-line-height-caption-l);
+    letter-spacing: var(--mantine-spacing-caption-l);
+  }
+
+  &[data-size='md'] {
+    --button-radius: var(--mantine-radius-xl);
+    font-size: var(--mantine-font-size-caption-l);
+    line-height: var(--mantine-line-height-caption-l);
+    letter-spacing: var(--mantine-spacing-caption-l);
+  }
+
+  &[data-size='lg'] {
+    --button-radius: var(--mantine-radius-xl);
+    font-size: var(--mantine-font-size-body-s);
+    line-height: var(--mantine-line-height-body-s);
+    letter-spacing: var(--mantine-spacing-body-s);
+  }
 
   &[data-variant='primary'] {
-    background-color: var(--mantine-color-primary-0);
-    color: var(--mantine-color-white);
+    --button-bg: var(--color-background-button-primary);
+    --button-hover: var(--color-background-button-primary-hover);
+    --button-color: var(--color-text-base-inverted);
     box-shadow: var(--mantine-shadow-xs);
 
     &:focus-visible {
-      border: none;
+      border-color: transparent;
     }
 
-    &:hover {
-      background-color: var(--color-background-button-primary-hover);
-    }
-
-    &:disabled,
-    &[data-disabled] {
+    &:where(:disabled:not([data-loading]), [data-disabled]:not([data-loading])) {
       background-color: var(--color-background-button-primary-disabled);
+      box-shadow: none;
     }
   }
 
   &[data-variant='secondary'] {
-    background-color: var(--mantine-color-secondary-0);
-    color: var(--mantine-color-primary);
-    border: 1px solid var(--mantine-color-border-action-normal-0);
+    --button-bg: var(--color-background-button-secondary);
+    --button-hover: var(--color-background-button-secondary-hover);
+    --button-color: var(--color-text-base-primary);
+    border-color: var(--color-border-action-normal);
     box-shadow: var(--mantine-shadow-xs);
 
-    &:hover {
-      background-color: var(--color-background-button-secondary-hover);
-      border: 1px solid var(--color-border-action-hover);
+    @media (hover: hover) {
+      &:hover:where(:not([data-loading], :disabled, [data-disabled])) {
+        border-color: var(--color-border-action-hover);
+      }
     }
 
-    &:disabled,
-    &[data-disabled] {
+    &:where(:disabled:not([data-loading]), [data-disabled]:not([data-loading])) {
       background-color: var(--color-background-button-secondary-disabled);
-      border: 1px solid var(--color-border-action-disabled);
+      border-color: var(--color-border-action-disabled);
+      box-shadow: none;
     }
 
-    .loader {
-      --button-color: var(--mantine-color-gray-5);
+    &::before {
+      background-color: rgba(0, 0, 0, 0.05);
     }
   }
 
   &[data-variant='tertiary'] {
-    background-color: var(--color-background-button-tertiary);
-    color: var(--mantine-color-primary);
+    --button-bg: var(--color-background-button-tertiary);
+    --button-hover: var(--color-background-button-tertiary-hover);
+    --button-color: var(--color-text-base-primary);
 
-    &:hover {
-      background-color: var(--color-background-button-tertiary-hover);
-    }
-
-    &:disabled,
-    &[data-disabled] {
+    &:where(:disabled:not([data-loading]), [data-disabled]:not([data-loading])) {
       background-color: var(--color-background-button-tertiary);
     }
 
-    .loader {
-      --button-color: var(--mantine-color-gray-5);
+    &::before {
+      background-color: rgba(0, 0, 0, 0.05);
     }
   }
 
   &[data-variant='ghost'] {
-    background-color: transparent;
-    color: var(--mantine-color-text-base-secondary-0);
+    --button-bg: transparent;
+    --button-hover: var(--color-background-button-ghost-hover);
+    --button-color: var(--color-text-base-secondary);
     box-shadow: none;
 
-    &:hover {
-      background-color: var(--color-background-button-ghost-hover);
-    }
-
-    &:disabled,
-    &[data-disabled] {
+    &:where(:disabled:not([data-loading]), [data-disabled]:not([data-loading])) {
       background-color: transparent;
     }
 
-    .loader {
-      --button-color: var(--mantine-color-gray-5);
+    &::before {
+      background-color: rgba(0, 0, 0, 0.05);
     }
   }
 
-  &:disabled,
-  &[data-disabled] {
+  &:where(:disabled:not([data-loading]), [data-disabled]:not([data-loading])) {
     color: var(--color-text-base-quaternary);
   }
 
   &:focus-visible {
-    border: rem(1px) solid var(--color-border-action-focus-light);
+    border-color: var(--color-border-action-focus-light);
     box-shadow: var(--shadow-focus-ring-light);
+  }
+
+  &:where([data-with-left-section]) {
+    padding-inline-start: var(--button-padding-x);
   }
 }
 
 .section {
-  --mantine-spacing-xs: 0.25rem;
+  &:where([data-position='left']) {
+    margin-inline-end: rem(4px);
+
+    .root[data-size='sm'] & {
+      margin-inline-end: rem(2px);
+    }
+  }
+
+  &:where([data-position='right']) {
+    margin-inline-start: rem(4px);
+
+    .root[data-size='sm'] & {
+      margin-inline-start: rem(2px);
+    }
+  }
+}
+
+.label {
+  .root[data-size='sm'] &,
+  .root[data-size='md'] &,
+  .root[data-size='lg'] & {
+    padding-inline: rem(4px);
+  }
 }
