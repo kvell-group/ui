@@ -82,6 +82,7 @@ export const theme: MantineThemeOverride = {
     lg: '0.625rem',
     xl: '0.75rem',
     xxl: '1rem',
+    xxxl: '1.5rem',
   },
   defaultRadius: 'xl',
   spacing: {
