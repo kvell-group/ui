@@ -14,5 +14,4 @@
 input {
   --input-bd: var(--mantine-color-border-action-normal-0);
   box-shadow: var(--mantine-shadow-xs);
-  --input-color: var(--mantine-color-text-base-tertiary-text);
 }
