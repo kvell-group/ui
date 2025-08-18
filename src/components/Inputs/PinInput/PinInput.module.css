@@ -1,0 +1,18 @@
+.root {
+  margin-bottom: 0.5rem;
+}
+
+.pinInput {
+  /* 
+    44:50, original:
+    height: pin-input-size
+    width: pin-input-size
+  */
+  width: calc(var(--pin-input-size) * 0.88);
+}
+
+input {
+  --input-bd: var(--mantine-color-border-action-normal-0);
+  box-shadow: var(--mantine-shadow-xs);
+  --input-color: var(--mantine-color-text-base-tertiary-text);
+}
