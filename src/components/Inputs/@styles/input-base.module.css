@@ -1,0 +1,54 @@
+.input-base {
+  @media (hover: hover) {
+    &:hover:where(:not([data-loading], :disabled, [data-disabled])) {
+      --input-bd: var(--color-border-action-hover);
+    }
+  }
+
+  &:focus-within {
+    --input-bd: var(--color-border-action-focus-light);
+    box-shadow: var(--shadow-focus-ring-light);
+  }
+
+  &[data-error] {
+    --input-color: var(--color-text-status-destructive);
+    --input-bd: var(--color-border-action-destructive);
+
+    @media (hover: hover) {
+      &:hover:where(:not([data-loading], :disabled, [data-disabled])) {
+        --input-bd: var(--color-border-action-destructive-hover);
+      }
+    }
+
+    &:focus-within {
+      --input-bd: var(--color-border-action-focus-destructive-light);
+      box-shadow: var(--shadow-focus-ring-light-destructive);
+    }
+  }
+
+  &:disabled,
+  [data-disabled] {
+    --input-bd: var(--color-border-action-disabled);
+    box-shadow: none;
+  }
+}
+
+.error-message {
+  padding-block: rem(2px);
+  font-size: var(--mantine-font-size-caption-l);
+  line-height: var(--mantine-line-height-caption-l);
+  letter-spacing: var(--mantine-spacing-caption-l);
+  display: flex;
+  color: var(--color-text-status-destructive);
+
+  &::before {
+    content: '';
+    width: rem(16px);
+    height: rem(16px);
+    background: currentColor;
+    mask: url('../../../assets/error.svg') no-repeat;
+    margin-top: rem(1.5px);
+    margin-right: rem(4px);
+    flex-shrink: 0;
+  }
+}

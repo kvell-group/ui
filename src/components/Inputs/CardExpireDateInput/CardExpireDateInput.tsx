@@ -1,6 +1,6 @@
 import { MaskedInput } from '../MaskedInput'
 
-import type { MaskedInputProps } from '../types'
+import type { MaskedInputProps } from '../@types/types'
 import { forwardRef } from 'react'
 import { CARD_EXPIRY_DATE_MASK } from '../../../constants/masks'
 import { IMask } from 'react-imask'

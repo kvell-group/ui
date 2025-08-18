@@ -13,6 +13,7 @@ export { Select } from './components/Inputs/Select'
 export { Textarea } from './components/Inputs/Textarea'
 export { DatesProvider } from '@mantine/dates'
 export * from './components/Inputs/DatePickerInput'
+export { PinInput } from './components/Inputs/PinInput'
 
 //providers
 export { KvellUiProvider } from './components/KvellUiProvider'
