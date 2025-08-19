@@ -14,6 +14,7 @@ export const theme: MantineThemeOverride = {
     tertiary: colorsTuple('#0a0f290a'),
 
     //background
+    'background-button-destructive': colorsTuple('#e6483d'),
     'background-surface-warning-accent': colorsTuple('#f48e2f'),
 
     //borders
