@@ -5,15 +5,12 @@ import type { MaskedInputProps } from '../@types/types'
 
 // ----------------------------------------------------------------------
 
-export const MaskedInput = forwardRef<HTMLInputElement, MaskedInputProps>(
-  ({ onChange, ...props }, ref) => {
-    return (
-      <Input
-        ref={ref}
-        component={IMaskInput}
-        onAccept={props.onAccept || onChange}
-        {...props}
-      />
-    )
-  }
-)
+export const MaskedInput = forwardRef<HTMLInputElement, MaskedInputProps>((props, ref) => {
+  return (
+    <Input
+      ref={ref}
+      component={IMaskInput}
+      {...props}
+    />
+  )
+})
