@@ -10,7 +10,7 @@ import { CardLogoByPan } from '../../CardLogoByPan'
 
 const mask = IMask.createMask({ mask: CARD_NUMBER_MASK })
 
-type CardInputProps = Omit<MaskedInputProps, 'value'> & { value: string }
+type CardInputProps = Omit<MaskedInputProps, 'value'> & { value?: string }
 
 // ----------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ export const CardInput = forwardRef<HTMLInputElement, CardInputProps>((props, re
       autoComplete='cc-number'
       {...props}
       mask={mask}
-      rightSection={<CardLogoByPan value={props.value} />}
+      rightSection={<CardLogoByPan value={props?.value || ''} />}
       leftSection={<CardSVG size={20} />}
       placeholder='____ ____ ____ ____'
     />
