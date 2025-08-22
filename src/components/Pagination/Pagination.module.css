@@ -1,0 +1,44 @@
+.root {
+  --pagination-active-bg: var(--color-background-button-tertiary);
+  --pagination-active-color: var(--color-text-base-primary);
+
+  --pagination-control-size-sm: rem(32px);
+  --pagination-control-size-md: rem(40px);
+
+  color: var(--color-text-base-secondary);
+  font-weight: 500;
+
+  &[data-size='sm'] {
+    --pagination-control-radius: var(--mantine-radius-lg);
+
+    & .control {
+      --pagination-control-fz: var(--mantine-font-size-caption-l);
+    }
+  }
+
+  &[data-size='md'] {
+    --pagination-control-radius: var(--mantine-radius-xl);
+
+    & .control {
+      --pagination-control-fz: var(--mantine-font-size-body-s);
+    }
+  }
+}
+
+.control {
+  border-color: transparent;
+}
+
+.control:not([data-active]) {
+  color: var(--color-text-base-secondary);
+  background: none;
+}
+
+.control:hover:not(:disabled, [data-disabled]) {
+  background: var(--color-background-button-tertiary);
+}
+
+.control:focus-visible {
+  border-color: var(--color-border-action-focus-light);
+  box-shadow: var(--shadow-focus-ring-light);
+}
