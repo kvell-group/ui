@@ -40,42 +40,42 @@
 
   &[data-variant='gray'] {
     --badge-bg: var(--color-background-badge-gray);
-    color: var(--color-text-base-secondary);
+    --badge-color: var(--color-text-base-secondary);
   }
 
   &[data-variant='blue'] {
     --badge-bg: var(--color-background-badge-blue);
-    color: var(--color-text-accent-blue-inverted);
+    --badge-color: var(--color-text-accent-blue-inverted);
   }
 
   &[data-variant='green'] {
     --badge-bg: var(--color-background-badge-green);
-    color: var(--color-text-accent-green-inverted);
+    --badge-color: var(--color-text-accent-green-inverted);
   }
 
   &[data-variant='orange'] {
     --badge-bg: var(--color-background-badge-orange);
-    color: var(--color-text-accent-orange-inverted);
+    --badge-color: var(--color-text-accent-orange-inverted);
   }
 
   &[data-variant='red'] {
     --badge-bg: var(--color-background-badge-red);
-    color: var(--color-text-accent-red-inverted);
+    --badge-color: var(--color-text-accent-red-inverted);
   }
 
   &[data-variant='purple'] {
     --badge-bg: var(--color-background-badge-purple);
-    color: var(--color-text-accent-purple-inverted);
+    --badge-color: var(--color-text-accent-purple-inverted);
   }
 
   &[data-variant='white'] {
     --badge-bg: var(--color-background-badge-white);
-    color: var(--color-text-base-secondary);
+    --badge-color: var(--color-text-base-secondary);
   }
 
   &[data-variant='white-destructive'] {
     --badge-bg: var(--color-background-badge-white);
-    color: var(--color-text-status-destructive);
+    --badge-color: var(--color-text-status-destructive);
   }
 }
 
