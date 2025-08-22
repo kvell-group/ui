@@ -48,8 +48,12 @@
   --color-background-accent-gray-subtle: #e9eaec;
   --color-background-accent-green-accent: #26bd6c;
   --color-background-badge-gray: #e9eaec;
+  --color-background-badge-blue: #e3eafd;
   --color-background-badge-green: #d1fae4;
   --color-background-badge-orange: #fdead8;
+  --color-background-badge-red: #fce5e4;
+  --color-background-badge-purple: #ecdffb;
+  --color-background-badge-white: #ffffff;
   --color-background-button-primary: #14151a;
   --color-background-button-primary-hover: #1f2228;
   --color-background-button-primary-disabled: #e9eaec;
@@ -73,7 +77,10 @@
   --color-border-base-alpha: #0a0f2914;
   --color-text-accent-blue-accent: #4778f5;
   --color-text-accent-green-inverted: #166e3f;
+  --color-text-accent-blue-inverted: #133a9a;
   --color-text-accent-orange-inverted: #ae590a;
+  --color-text-accent-red-inverted: #9a1c13;
+  --color-text-accent-purple-inverted: #5314a3;
   --color-text-base-primary: #14151a;
   --color-text-base-secondary: #0f132499;
   --color-text-base-tertiary: #0d112666;
