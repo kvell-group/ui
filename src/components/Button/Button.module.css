@@ -148,3 +148,31 @@
     padding-inline: rem(4px);
   }
 }
+
+.root[data-variant='link'] {
+  --button-bg: transparent;
+  --button-hover: transparent;
+  --button-color: var(--color-text-base-primary);
+  --button-hover-color: var(--color-text-base-secondary);
+  --button-radius: var(--mantine-radius-xs);
+  --button-height-sm: rem(20px);
+  --button-height-md: rem(24px);
+  padding-inline: 0;
+
+  &:where(:disabled:not([data-loading]), [data-disabled]:not([data-loading])) {
+    background: none;
+
+    & .section svg {
+      fill: var(--color-text-base-quaternary);
+    }
+  }
+
+  &[data-size='md'] {
+    font-size: var(--mantine-font-size-body-s);
+    letter-spacing: var(--mantine-spacing-body-s);
+  }
+
+  & .label {
+    padding-inline: rem(2px);
+  }
+}
