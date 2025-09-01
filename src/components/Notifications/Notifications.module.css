@@ -2,10 +2,7 @@
   --notification-color: var(--color-icon-status-info);
   border: rem(1px) solid var(--color-border-action-normal);
   box-shadow: var(--mantine-shadow-sm);
-  padding-inline-start: rem(16px);
-  padding-inline-end: rem(16px);
-  padding-top: rem(16px);
-  padding-bottom: rem(16px);
+  padding: rem(16px);
   align-items: flex-start;
 
   &:global(.error) {
