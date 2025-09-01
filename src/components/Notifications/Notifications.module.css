@@ -1,0 +1,46 @@
+.root {
+  --notification-color: var(--color-icon-status-info);
+  border: rem(1px) solid var(--color-border-action-normal);
+  box-shadow: var(--mantine-shadow-sm);
+  padding-inline-start: rem(16px);
+  padding-inline-end: rem(16px);
+  padding-top: rem(16px);
+  padding-bottom: rem(16px);
+  align-items: flex-start;
+
+  &:global(.error) {
+    --notification-color: var(--color-icon-status-destructive);
+    background-color: var(--color-background-surface-destructive);
+
+    & .closeButton {
+      @mixin hover {
+        background-color: var(--color-background-button-destructive-tertiary);
+      }
+    }
+  }
+}
+
+.icon {
+  height: rem(24px);
+  width: rem(20px);
+  background-color: transparent;
+  color: var(--notification-color);
+  margin-inline-end: rem(12px);
+}
+
+.title {
+  font-size: var(--mantine-font-size-body-s);
+  line-height: var(--mantine-line-height-body-s);
+  margin-bottom: 0;
+}
+
+.description {
+  font-size: var(--mantine-font-size-caption-l);
+  line-height: var(--mantine-line-height-caption-l);
+  color: var(--color-text-base-secondary);
+}
+
+.closeButton {
+  --cb-size: rem(24px);
+  color: var(--color-icon-base-secondary);
+}
