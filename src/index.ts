@@ -11,9 +11,10 @@ export { Checkbox } from './components/Inputs/Checkbox'
 export { Switch } from './components/Inputs/Switch'
 export { Select } from './components/Inputs/Select'
 export { Textarea } from './components/Inputs/Textarea'
-export { DatesProvider } from '@mantine/dates'
+export { DatesProvider } from './components/DatesProvider'
 export * from './components/Inputs/DatePickerInput'
 export { PinInput } from './components/Inputs/PinInput'
+export * from './components/Notifications'
 
 //providers
 export { KvellUiProvider } from './components/KvellUiProvider'

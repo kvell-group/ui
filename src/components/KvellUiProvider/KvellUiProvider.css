@@ -67,6 +67,7 @@
   --color-background-input-disabled: #fff;
   --color-background-surface-neutral: #f7f7f8;
   --color-background-surface-warning-subtle: #fdead8;
+  --color-background-surface-destructive: #fdf2f1;
   --color-border-action-normal: #dee0e3;
   --color-border-action-hover: #c8cad0;
   --color-border-action-disabled: #e9eaec;
@@ -93,8 +94,10 @@
   --color-icon-base-tertiary: #0d112666;
   --color-icon-base-quaternary: #0a0f2940;
   --color-icon-base-inverted: #ffffff;
+  --color-icon-status-info: #4778f5;
   --color-icon-status-success: #26bd6c;
   --color-icon-status-warning: #f48e2f;
+  --color-icon-status-destructive: #e6483d;
   --color-icon-status-destructive-secondary: #e6483db2;
   --color-icon-status-info-secondary: #3368f099;
   --shadow-focus-ring-light: 0px 0px 0px 2px #c8b2ff80;

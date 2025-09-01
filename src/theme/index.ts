@@ -1,4 +1,5 @@
 import { colorsTuple, type MantineThemeOverride } from '@mantine/core'
+import { Notification } from '../components/Notifications/Notification'
 
 // ----------------------------------------------------------------------
 
@@ -149,14 +150,9 @@ export const theme: MantineThemeOverride = {
   defaultGradient: { from: 'black', to: 'yellow', deg: 25 }, //for example
   // activeClassName: 'class-name', //for example
   // focusClassName: 'class-name', //for example
-  /*  components: {
-    Title: Title.extend({
-      classNames: { root: 'classnames' },
-      styles: {},
-      vars: { order: 5 },
-      defaultProps: {},
-    }), //for example
-  }, */
+  components: {
+    Notification,
+  },
   other: {
     // any additional vars
     /* usage:
