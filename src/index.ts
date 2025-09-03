@@ -1,3 +1,6 @@
+//providers
+export { KvellUiProvider } from './components/KvellUiProvider'
+
 // constants
 export { theme } from './theme'
 
@@ -15,9 +18,6 @@ export { DatesProvider } from './components/DatesProvider'
 export * from './components/Inputs/DatePickerInput'
 export { PinInput } from './components/Inputs/PinInput'
 export * from './components/Notifications'
-
-//providers
-export { KvellUiProvider } from './components/KvellUiProvider'
 
 //components
 export * from './components/Button'

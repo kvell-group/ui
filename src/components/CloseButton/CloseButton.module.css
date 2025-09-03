@@ -1,0 +1,14 @@
+.root {
+  --cb-size: rem(24px);
+  border: rem(1px) solid transparent;
+  color: var(--color-icon-base-secondary);
+
+  @mixin hover {
+    background-color: var(--color-background-button-tertiary-hover);
+  }
+
+  &:focus-visible {
+    border-color: var(--color-border-action-focus-light);
+    box-shadow: var(--shadow-focus-ring-light);
+  }
+}

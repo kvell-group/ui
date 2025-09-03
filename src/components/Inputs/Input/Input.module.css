@@ -58,7 +58,7 @@
 
 .section {
   --input-section-color: var(--color-icon-base-tertiary);
-  --right-section-end: 0.75rem;
+  --right-section-end: 0.25rem;
   --left-section-start: 0.25rem;
 
   .wrapper[data-disabled] & {
