@@ -1,5 +1,6 @@
 import { colorsTuple, type MantineThemeOverride } from '@mantine/core'
 import { Notification } from '../components/Notifications/Notification'
+import { CloseButton } from '../components/CloseButton'
 
 // ----------------------------------------------------------------------
 
@@ -151,6 +152,7 @@ export const theme: MantineThemeOverride = {
   // activeClassName: 'class-name', //for example
   // focusClassName: 'class-name', //for example
   components: {
+    CloseButton,
     Notification,
   },
   other: {
