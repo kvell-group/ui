@@ -54,8 +54,8 @@
   --color-background-badge-purple: #ecdffb;
   --color-background-badge-red: #fce5e4;
   --color-background-badge-white: #ffffff;
-  --color-background-button-primary: #14151a;
-  --color-background-button-primary-hover: #1f2228;
+  --color-background-button-primary: var(--mantine-color-primary-filled);
+  --color-background-button-primary-hover: var(--mantine-color-primary-filled-hover);
   --color-background-button-primary-disabled: #e9eaec;
   --color-background-button-secondary: #ffffff;
   --color-background-button-secondary-hover: #f7f7f8;

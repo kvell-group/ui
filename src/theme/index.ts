@@ -11,7 +11,18 @@ export const theme: MantineThemeOverride = {
   // white: 'ffffff',
   black: '#14151a',
   colors: {
-    primary: colorsTuple('#14151a'),
+    primary: colorsTuple([
+      '#14151a',
+      '#14151a',
+      '#14151a',
+      '#14151a',
+      '#14151a',
+      '#14151a',
+      '#14151a',
+      '#1f2228',
+      '#14151a',
+      '#14151a',
+    ]),
     secondary: colorsTuple('#ffffff'),
     tertiary: colorsTuple('#0a0f290a'),
 
