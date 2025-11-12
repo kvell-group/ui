@@ -36,3 +36,8 @@ export * from './components/Pagination'
 
 //Miscellaneous
 export { Divider } from './components/@core/Divider'
+
+// types ----------------------------------------------------------------
+
+//props
+export type { MaskedInputProps } from './components/Inputs/@types/types'

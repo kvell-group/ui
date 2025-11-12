@@ -6,5 +6,5 @@ export const Pagination = MantinePagination.withProps({
   classNames,
   previousIcon: () => <RiArrowLeftLine size={16} />,
   nextIcon: () => <RiArrowRightLine size={16} />,
-  dotsIcon: () => '...',
+  dotsIcon: () => <>...</>,
 })
