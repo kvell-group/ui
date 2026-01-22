@@ -31,7 +31,7 @@ export { Carousel } from './components/Carousel'
 export { Card } from './components/Card'
 export * from './components/ActionIcon'
 export * from './components/Pagination'
-export { BarChart, LineChart } from './components/Charts'
+export { LineChart, BarChart } from './components/Charts'
 
 // core-components ------------------------------------------------------
 
