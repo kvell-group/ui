@@ -15,6 +15,7 @@
   text-transform: none;
   font-weight: 500;
   letter-spacing: var(--badge-ls);
+  cursor: inherit;
 
   &[data-size='xs'] {
     --badge-radius: var(--mantine-radius-xs);

@@ -20,6 +20,10 @@
   }
 }
 
+.header {
+  align-items: start;
+}
+
 .body {
   padding-bottom: rem(32px);
 }
