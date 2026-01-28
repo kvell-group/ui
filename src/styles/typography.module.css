@@ -131,6 +131,14 @@ p.caption-l-regular,
   letter-spacing: var(--mantine-spacing-caption-l);
 }
 
+.caption-m-medium {
+  font-family: var(--mantine-font-family);
+  font-weight: 500;
+  font-size: var(--mantine-font-size-caption-m);
+  line-height: var(--mantine-line-height-caption-m);
+  letter-spacing: var(--mantine-spacing-caption-m);
+}
+
 .caption-m-regular {
   font-family: var(--mantine-font-family);
   font-weight: 400;
