@@ -21,6 +21,7 @@ export { PinInput } from './components/Inputs/PinInput'
 export * from './components/Notifications'
 
 //components
+export { Alert } from './components/Alert'
 export * from './components/Button'
 export { CardLogoByPan } from './components/CardLogoByPan'
 export { Loader } from './components/Loader'
