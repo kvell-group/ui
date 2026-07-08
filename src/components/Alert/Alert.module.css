@@ -9,6 +9,13 @@
     --alert-bd: rem(1px) solid var(--color-border-action-normal);
     --alert-color: var(--color-icon-status-warning);
   }
+
+  &[data-variant='danger'] {
+    --alert-bg: var(--color-background-surface-destructive);
+    --alert-bd: rem(1px) solid var(--color-border-action-destructive);
+    --alert-color: var(--color-icon-status-destructive);
+    --alert-message-color: var(--color-text-status-destructive);
+  }
 }
 
 .wrapper {
@@ -24,5 +31,5 @@
   font-size: var(--mantine-font-size-body-s);
   line-height: var(--mantine-line-height-body-s);
   letter-spacing: var(--mantine-spacing-body-s);
-  color: var(--color-text-base-primary);
+  color: var(--alert-message-color, var(--color-text-base-primary));
 }
