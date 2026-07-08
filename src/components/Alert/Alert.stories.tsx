@@ -4,7 +4,11 @@ import { KvellUiProvider } from '@/components/KvellUiProvider'
 
 import { theme } from '@/theme'
 import { Alert } from '@/components/Alert'
-import { AlertVariants, WARNING_ALERT_VARIANT } from '@/components/Alert/constants'
+import {
+  AlertVariants,
+  DANGER_ALERT_VARIANT,
+  WARNING_ALERT_VARIANT,
+} from '@/components/Alert/constants'
 
 // ----------------------------------------------------------------------
 
@@ -55,6 +59,13 @@ export const WarningAlertWithoutIcon: Story = {
     variant: WARNING_ALERT_VARIANT,
     icon: null,
     children: 'Алерт с вариантом warning, но без иконки (icon явно передан как null)',
+  },
+}
+
+export const DangerAlert: Story = {
+  args: {
+    variant: DANGER_ALERT_VARIANT,
+    children: 'Оплата отклонена банком',
   },
 }
 
