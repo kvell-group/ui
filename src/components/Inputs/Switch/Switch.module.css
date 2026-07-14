@@ -1,5 +1,4 @@
 .track {
-  --switch-width: calc(var(--switch-width) - rem(4px));
   --switch-color: var(--mantine-color-background-toggle-active-0);
 
   input:not(:checked) + & {
