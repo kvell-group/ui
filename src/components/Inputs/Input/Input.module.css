@@ -14,10 +14,6 @@
 
   box-shadow: var(--mantine-shadow-xs);
 
-  &:not([data-multiline]) {
-    --input-size: var(--input-height);
-  }
-
   [data-position='left'] ~ & {
     --input-padding-inline-start: 2.5rem;
   }
