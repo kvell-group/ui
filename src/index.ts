@@ -19,6 +19,8 @@ export { Textarea } from './components/Inputs/Textarea'
 export { DatesProvider } from './components/DatesProvider'
 export * from './components/Inputs/DatePickerInput'
 export { PinInput } from './components/Inputs/PinInput'
+export { OtpInput } from './components/Inputs/OtpInput'
+export { SegmentedControl } from './components/Inputs/SegmentedControl'
 export * from './components/Notifications'
 
 //components
