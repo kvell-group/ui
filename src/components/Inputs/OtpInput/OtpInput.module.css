@@ -1,0 +1,35 @@
+.root {
+  margin-bottom: 0.5rem;
+
+  &::after {
+    content: '–';
+    order: 1;
+    width: rem(12px);
+    text-align: center;
+    color: var(--color-text-base-tertiary);
+    font-size: var(--mantine-font-size-md);
+    line-height: var(--mantine-line-height-md);
+  }
+
+  &[data-no-separator]::after {
+    content: none;
+  }
+}
+
+.pinInput {
+  width: rem(42px);
+}
+
+.input {
+  --input-bd: var(--color-border-action-normal);
+  --input-color: var(--color-text-base-primary);
+  --input-disabled-bg: var(--color-background-input-disabled);
+  --input-disabled-color: var(--color-text-base-quaternary);
+
+  --input-height: 2.5rem;
+  --input-size: 2.5rem;
+
+  height: 2.5rem;
+  min-height: 2.5rem;
+  box-shadow: var(--mantine-shadow-xs);
+}
