@@ -45,4 +45,11 @@ export const OtpInputFourDigits: Story = {
   },
 }
 
+export const OtpInputEightDigits: Story = {
+  args: {
+    length: 8,
+    separatorIndex: 4,
+  },
+}
+
 export default meta
