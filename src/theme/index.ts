@@ -1,6 +1,13 @@
 import { colorsTuple, type MantineThemeOverride } from '@mantine/core'
 import { Notification } from '../components/Notifications/Notification'
 import { CloseButton } from '../components/CloseButton'
+import { ActionIconTheme } from '../components/ActionIcon/ActionIcon'
+import { BreadcrumbsTheme } from '../components/Breadcrumbs'
+import { ModalTheme } from '../components/Modal/Modal'
+import { PaginationTheme } from '../components/Pagination/Pagination'
+import { SegmentedControlTheme } from '../components/Inputs/SegmentedControl/SegmentedControl'
+import { SwitchTheme } from '../components/Inputs/Switch/Switch'
+import { TabsTheme } from '../components/Tabs'
 
 // ----------------------------------------------------------------------
 
@@ -106,7 +113,7 @@ export const theme: MantineThemeOverride = {
     'body-m': '-0.20000000298023224px',
     'body-s': '-0.20000000298023224px',
     'body-l': '-0.20000000298023224px',
-    'caption-l': '-0.10000000149011612px;',
+    'caption-l': '-0.10000000149011612px',
     'caption-m': '0',
     //mantine default variables
     xs: '0.625rem',
@@ -150,12 +157,12 @@ export const theme: MantineThemeOverride = {
   // mantine default variables
   breakpoints: { xs: '36em', sm: '48em', md: '62em', lg: '75em', xl: '88em' },
   shadows: {
-    //same name for mantine and
-    xs: '0px 1px 2px 0px #14151A0D',
-    // sm: '1px 1px 3px rgba(0, 0, 0, .25)',
-    // md: '1px 1px 3px rgba(0, 0, 0, .25)',
+    // Blank_2.7 x KVELL effect styles (Shadows/*); xs without the KVELL-file inset, which Blank UI doesn't have
+    xs: '0px 1px 2px 0px #14151a0d',
+    sm: '0px 1px 2px 0px #14151a0f, 0px 1px 3px 0px #14151a1a',
+    md: '0px 2px 4px -1px #14151a0f, 0px 3px 6px -1px #14151a14',
     lg: '0px 3px 6px -2px #14151a0d, 0px 10px 16px -3px #14151a14',
-    // xl: '1px 1px 3px rgba(0, 0, 0, .25)',
+    xl: '0px 8px 8px -5px #14151a0d, 0px 18px 24px -5px #14151a1a',
   }, //for example
   respectReducedMotion: false, //default
   cursorType: 'default',
@@ -165,6 +172,14 @@ export const theme: MantineThemeOverride = {
   components: {
     CloseButton,
     Notification,
+    // raw Mantine components in apps get the kit look through these
+    ActionIcon: ActionIconTheme,
+    Breadcrumbs: BreadcrumbsTheme,
+    Modal: ModalTheme,
+    Pagination: PaginationTheme,
+    SegmentedControl: SegmentedControlTheme,
+    Switch: SwitchTheme,
+    Tabs: TabsTheme,
   },
   other: {
     // any additional vars

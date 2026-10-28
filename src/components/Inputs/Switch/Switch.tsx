@@ -1,19 +1,15 @@
 import { Switch as SwitchBase } from '@mantine/core'
 import classes from './Switch.module.css'
-import textClassNames from '../../../styles/typography.module.css'
-import clsx from 'clsx'
-import { CAPTION_L_MEDIUM_FONT_VARIANT } from '../../../constants/font-variants'
 
 // ----------------------------------------------------------------------
 
-const descriptionClassName = clsx(
-  classes.description,
-  textClassNames[CAPTION_L_MEDIUM_FONT_VARIANT]
-)
-
-// ----------------------------------------------------------------------
+/** Registered in theme.components, so raw Mantine Switch gets the kit look too */
+export const SwitchTheme = SwitchBase.extend({
+  classNames: classes,
+  defaultProps: { size: 'xs' },
+})
 
 export const Switch = SwitchBase.withProps({
-  classNames: { ...classes, description: descriptionClassName },
+  classNames: classes,
   size: 'xs',
 })
