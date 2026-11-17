@@ -1,4 +1,4 @@
-import { colorsTuple, type MantineThemeOverride } from '@mantine/core'
+import { colorsTuple, defaultVariantColorsResolver, type MantineThemeOverride } from '@mantine/core'
 import { Notification } from '../components/Notifications/Notification'
 import { CloseButton } from '../components/CloseButton'
 
@@ -59,23 +59,10 @@ export const theme: MantineThemeOverride = {
   },
   primaryShade: 6, // { light: 6, dark: 8 } default mantine by theme
   primaryColor: 'primary',
-  /* variantColorResolver: ({ color, variant, gradient, theme }) => {
-    if (variant === 'primary') {
-      return {
-        background: 'var(--mantine-color-red-9)',
-        hover: 'var(--mantine-color-red-8)',
-        color: 'var(--mantine-color-white)',
-        border: 'none',
-      }
-    }
-
-    return {
-      background: 'var(--mantine-color-red-9)',
-      hover: 'var(--mantine-color-red-8)',
-      color: 'var(--mantine-color-white)',
-      border: 'none',
-    }
-  }, //color by variant */
+  variantColorResolver: (input) =>
+    defaultVariantColorsResolver(
+      input.variant === 'primary' ? { ...input, variant: 'filled' } : input
+    ),
   autoContrast: false, //default value
   luminanceThreshold: 0.3, //default value
   fontFamily: 'Onest, Arial, Helvetica, sans-serif',
