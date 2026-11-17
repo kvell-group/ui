@@ -1,9 +1,4 @@
-import {
-  colorsTuple,
-  defaultVariantColorsResolver,
-  parseThemeColor,
-  type MantineThemeOverride,
-} from '@mantine/core'
+import { colorsTuple, defaultVariantColorsResolver, type MantineThemeOverride } from '@mantine/core'
 import { Notification } from '../components/Notifications/Notification'
 import { CloseButton } from '../components/CloseButton'
 
@@ -64,29 +59,10 @@ export const theme: MantineThemeOverride = {
   },
   primaryShade: 6, // { light: 6, dark: 8 } default mantine by theme
   primaryColor: 'primary',
-  // variant="primary" — кастомный вариант: Mantine для него ничего не считает, а цвет текста
-  // зашит в Button.module.css. При autoContrast: true выбираем чёрный/белый текст по яркости
-  // фона (primaryColor или проп color) с учётом luminanceThreshold.
-  variantColorResolver: (input) => {
-    const colors = defaultVariantColorsResolver(input)
-
-    if (input.variant !== 'primary') return colors
-
-    const autoContrast =
-      typeof input.autoContrast === 'boolean' ? input.autoContrast : input.theme.autoContrast
-
-    if (!autoContrast) return colors
-
-    const { isLight } = parseThemeColor({
-      color: input.color || input.theme.primaryColor,
-      theme: input.theme,
-    })
-
-    return {
-      ...colors,
-      color: isLight ? 'var(--mantine-color-black)' : 'var(--mantine-color-white)',
-    }
-  },
+  variantColorResolver: (input) =>
+    defaultVariantColorsResolver(
+      input.variant === 'primary' ? { ...input, variant: 'filled' } : input
+    ),
   autoContrast: false, //default value
   luminanceThreshold: 0.3, //default value
   fontFamily: 'Onest, Arial, Helvetica, sans-serif',
