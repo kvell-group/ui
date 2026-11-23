@@ -68,7 +68,7 @@
     font-size: var(--mantine-font-size-caption-l);
     line-height: var(--mantine-line-height-caption-l);
     letter-spacing: var(--mantine-spacing-caption-l);
-    color: var(--color-text-base-secondary);
+    color: var(--alert-message-color, var(--color-text-base-secondary));
   }
 }
 

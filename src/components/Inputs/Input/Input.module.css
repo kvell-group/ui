@@ -39,11 +39,11 @@
 
   /* 12px padding + 20px icon + 4px gap + 4px inner text padding */
   .wrapper[data-with-left-section] & {
-    --input-padding-inline-start: rem(40px);
+    --input-padding-inline-start: max(rem(40px), var(--input-left-section-size));
   }
 
   .wrapper[data-with-right-section] & {
-    --input-padding-inline-end: rem(40px);
+    --input-padding-inline-end: max(rem(40px), var(--input-right-section-size));
   }
 
   @media (hover: hover) {

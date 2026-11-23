@@ -7,7 +7,9 @@ import type { ExtendedButtonVariant } from './types'
 
 // ----------------------------------------------------------------------
 
-export type ButtonProps = BaseButtonProps & { variant?: ExtendedButtonVariant }
+export type ButtonProps = Omit<BaseButtonProps, 'loaderProps' | 'variant'> & {
+  variant?: ExtendedButtonVariant
+}
 
 // Mantine's own variants have no Figma look; render them as the closest Blank UI style
 const MANTINE_VARIANT_ALIASES: Partial<Record<string, ExtendedButtonVariant>> = {
@@ -26,9 +28,8 @@ export const Button = createPolymorphicComponent<'button', ButtonProps>(
     const {
       size = 'md',
       variant = 'primary',
+      color,
       loading,
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars -- Mantine's loader isn't rendered
-      loaderProps,
       leftSection,
       disabled,
       ...resProps
@@ -39,7 +40,8 @@ export const Button = createPolymorphicComponent<'button', ButtonProps>(
       <MantineButton
         ref={ref}
         size={size}
-        variant={MANTINE_VARIANT_ALIASES[variant] ?? variant}
+        color={color}
+        variant={color === undefined ? (MANTINE_VARIANT_ALIASES[variant] ?? variant) : variant}
         disabled={disabled || loading}
         data-loading={loading || undefined}
         aria-busy={loading || undefined}
@@ -47,7 +49,7 @@ export const Button = createPolymorphicComponent<'button', ButtonProps>(
           loading ? (
             <RiLoader2Line
               className={classNames.loader}
-              size={LOADER_SIZES[size] ?? LOADER_SIZES.md}
+              size={LOADER_SIZES[String(size).replace('compact-', '')] ?? LOADER_SIZES.md}
               aria-hidden
             />
           ) : (

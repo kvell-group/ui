@@ -43,8 +43,7 @@ export const DatePickerInputRange: Story = {
       type='range'
       label='Период выписки'
       placeholder='Выберите период'
-      // withProps() drops the `type` generic, so the range value needs a cast
-      defaultValue={['2026-10-08', '2026-10-17'] as unknown as string}
+      defaultValue={['2026-10-08', '2026-10-17']}
       defaultDate='2026-10-01'
     />
   ),
