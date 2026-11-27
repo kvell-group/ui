@@ -1,20 +1,133 @@
-.track {
-  --switch-color: var(--mantine-color-background-toggle-active-0);
+/* Figma: Toggle 593:4174 + Toggle Label 593:4983 (Blank_2.7 x KVELL).
+   FE size xs = Figma sm (28x16, knob 12), FE sizes sm/md/lg = Figma md (34x20, knob 16); knob inset 2px. */
 
-  input:not(:checked) + & {
-    background-color: var(--mantine-color-background-toggle-default-0);
+.root {
+  --switch-height-xs: rem(16px);
+  --switch-width-xs: rem(28px);
+  --switch-thumb-size-xs: rem(12px);
+  --switch-track-label-padding-xs: rem(2px);
+
+  --switch-height-sm: rem(20px);
+  --switch-width-sm: rem(34px);
+  --switch-thumb-size-sm: rem(16px);
+  --switch-track-label-padding-sm: rem(2px);
+
+  /* Figma has two sizes; Mantine's md and lg render as Figma md */
+  --switch-height-md: var(--switch-height-sm);
+  --switch-width-md: var(--switch-width-sm);
+  --switch-thumb-size-md: var(--switch-thumb-size-sm);
+  --switch-track-label-padding-md: var(--switch-track-label-padding-sm);
+  --switch-height-lg: var(--switch-height-sm);
+  --switch-width-lg: var(--switch-width-sm);
+  --switch-thumb-size-lg: var(--switch-thumb-size-sm);
+  --switch-track-label-padding-lg: var(--switch-track-label-padding-sm);
+
+  --label-offset-start: rem(16px);
+}
+
+.track {
+  /* Figma Toggle Label: knob container has 1px (sm) / 2px (md) top padding vs. the 20/24px text line */
+  margin-top: rem(1px);
+  --switch-bg: var(--color-background-toggle-default);
+
+  .root:is([data-size='sm'], [data-size='md'], [data-size='lg']) & {
+    margin-top: rem(2px);
+  }
+
+  input:checked + & {
+    --switch-bg: var(--color-background-toggle-active);
+  }
+
+  input:disabled + & {
+    --switch-bg: var(--color-background-toggle-disabled);
+  }
+
+  input:checked:disabled + & {
+    --switch-bg: var(--color-background-toggle-active-disabled);
+  }
+
+  input:focus-visible + & {
+    outline: none;
+    /* Figma Toggle State=Focus: 1px white + 2.5px spread.
+       Figma paints the ring Blank violet (#c8b2ff99) — a kit error, accents are brand */
+    box-shadow:
+      0 0 0 rem(1px) var(--color-border-base-surface),
+      0 0 0 rem(2.5px) var(--color-focus-ring-light);
+  }
+}
+
+@media (hover: hover) {
+  .root:hover input:not(:disabled) + .track {
+    --switch-bg: var(--color-background-toggle-hover);
+  }
+
+  .root:hover input:checked:not(:disabled) + .track {
+    --switch-bg: var(--color-background-toggle-active-hover);
+  }
+}
+
+.thumb {
+  --switch-thumb-bg: var(--color-background-toggle-handle);
+  box-shadow: var(--mantine-shadow-xs);
+
+  &::before {
+    display: none;
+  }
+
+  input:disabled + * > & {
+    --switch-thumb-bg: var(--color-background-toggle-handle-disabled);
+    box-shadow: none;
+  }
+
+  input:checked:disabled + * > & {
+    --switch-thumb-bg: var(--color-background-toggle-handle);
+  }
+}
+
+/* Label = Caption L/Medium primary (Body S/Medium for FE size sm);
+   Caption (description) = Caption L/Regular secondary, 4px below the label.
+   Description alone (no label) is styled as the label, as FE uses it today. */
+.label,
+.description {
+  font-family: var(--mantine-font-family);
+  font-size: var(--mantine-font-size-caption-l);
+  line-height: var(--mantine-line-height-caption-l);
+  letter-spacing: var(--mantine-spacing-caption-l);
+
+  .root:is([data-size='sm'], [data-size='md'], [data-size='lg']) & {
+    font-size: var(--mantine-font-size-body-s);
+    line-height: var(--mantine-line-height-body-s);
+    letter-spacing: var(--mantine-spacing-body-s);
+  }
+}
+
+.label {
+  font-weight: 500;
+  color: var(--color-text-base-primary);
+
+  &[data-disabled] {
+    color: var(--color-text-base-primary);
   }
 }
 
 .description {
-  margin-top: -1px;
-  --label-offset-start: 1rem;
-  color: var(--mantine-color-primary);
+  /* InputWrapper's padding: 0 can load after InlineInput's offset — keep the text under the label */
+  padding-inline-start: var(--label-offset-start);
+  padding-inline-end: var(--label-offset-end);
+  margin-top: rem(4px);
+  font-weight: 400;
+  color: var(--color-text-base-secondary);
+
+  .labelWrapper:not(:has(.label)) & {
+    margin-top: 0;
+    font-weight: 500;
+    color: var(--color-text-base-primary);
+  }
 }
 
 .error {
   color: var(--color-text-status-destructive);
-  padding-left: 0.25rem;
+  padding-left: calc(var(--label-offset-start) + 0.25rem);
   margin-top: 0;
 
   &::before {
@@ -23,8 +136,4 @@
     top: 3px;
     left: -0.25rem;
   }
-}
-
-.thumb::before {
-  display: none;
 }
